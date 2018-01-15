@@ -5,4 +5,12 @@ body {
 
   margin: 0;
   padding: 0;
+
+  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+}
+
+.user-card-container {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
 }

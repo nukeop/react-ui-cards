@@ -1,13 +1,5 @@
-import React from 'react';
+import UserCard from './UserCard';
 
-class MyComponent extends React.Component {
-  render() {
-    return (
-      <div>
-	My simple React component
-      </div>
-    );
-  }
-}
-
-export default MyComponent;
+export {
+  UserCard
+};

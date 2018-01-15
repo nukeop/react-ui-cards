@@ -1,0 +1,19 @@
+.user-card-body {
+  padding: 1rem;
+  padding-top: 4rem;
+
+  .user-card-name {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: #2c3e50;
+  }
+
+  .user-card-position-name {
+    display: flex;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: #7f8c8d;
+  }
+}
