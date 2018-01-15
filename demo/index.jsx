@@ -1,13 +1,32 @@
 import React from "react";
-import { render } from "react-dom";
+import ReactDOM from "react-dom";
+import { AppContainer } from 'react-hot-loader';
+
 import MyComponent from '../src';
 
-function Demo() {
-  return(
+import './styles.scss';
+
+const render = Component => {
+  ReactDOM.render(
+    <AppContainer>
+      <Component />
+    </AppContainer>,
+    document.getElementById('app')
+  );
+}
+
+const demo = () => {
+  return (
     <div>
       <MyComponent />
     </div>
   );
 }
 
-render(<Demo />, document.getElementById("app"));
+render(demo);
+
+if (module.hot) {
+  module.hot.accept( () => {
+    render(demo);
+  });
+}
