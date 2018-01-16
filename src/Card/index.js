@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames';
 
 import './styles.scss';
 
@@ -6,20 +7,15 @@ class Card extends React.Component {
   constructor(props) {
     super(props);
   }
-
+  
   render() {
     let {
-      href
+      className
     } = this.props;
-
-    href = href !== undefined ? href : null;
-    
     return (
-      <a href={href} className='card-link'>
-	<div className="card">
-	  {this.props.children}
-	</div>
-      </a>
+      <div className={classnames("card", className)}>
+	{this.props.children}
+      </div>
     );
   }
 }

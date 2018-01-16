@@ -23,6 +23,7 @@ const demo = () => {
       </h2>
       <div className="card-container">
 	<UserCard
+	   cardClass='float'
 	   header='https://i.imgur.com/w5tX1Pn.jpg'
 	   avatar='https://i.imgur.com/uDYejhJ.jpg'
 	   name='Justin Case'
@@ -43,6 +44,7 @@ const demo = () => {
 	   ]}
 	   />
 	<UserCard
+	   cardClass='float'
 	   href='https://github.com/nukeop'
 	   header='https://i.imgur.com/vRAtM3i.jpg'
 	   avatar='https://i.imgur.com/XJxqvsU.jpg'
@@ -50,6 +52,7 @@ const demo = () => {
 	   positionName='Software Engineering Manager'
 	   />
 	<UserCard
+	   cardClass='float'
 	   href='https://github.com/nukeop'
 	   header='https://i.imgur.com/p5yXGQk.jpg'
 	   avatar='https://i.imgur.com/kFkyYkZ.jpg'
