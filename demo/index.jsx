@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import { UserCard, ProductCard } from '../src';
+import { UserCard, ProductCard, TaggedContentCard } from '../src';
 
 import './styles.scss';
 
@@ -103,7 +103,44 @@ const demo = () => {
 	   url='https://github.com/nukeop'
 	   />
       </div>
-      
+      <h2>
+	Tagged content cards
+      </h2>
+      <div className='card-container'>
+	<TaggedContentCard
+	   href='https://github.com/nukeop'
+	   thumbnail='https://i.imgur.com/yCch7GN.jpg'
+	   title='Cheesecake'
+	   description='a cake with raspberries'
+	   tags={[
+	     'food',
+	     'cake',
+	     'fruits'
+	   ]}
+	   />
+	<TaggedContentCard
+	   href='https://github.com/nukeop'
+	   thumbnail='https://i.imgur.com/57I3RAq.jpg'
+	   title='Cupcakes'
+	   description='a bite-sized cake'
+	   tags={[
+	     'food',
+	     'cake',
+	     'icing'
+	   ]}
+	   />
+	<TaggedContentCard
+	   href='https://github.com/nukeop'
+	   thumbnail='https://i.imgur.com/H0f0R6p.jpg'
+	   title='Burger'
+	   description='the cornerstone of every nutritious breakfast'
+	   tags={[
+	     'food',
+	     'sandwich',
+	     'meat'
+	   ]}
+	   />
+      </div>
     </div>
   );
 }
