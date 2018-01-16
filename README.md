@@ -34,3 +34,16 @@ https://nukeop.github.io/react-ui-cards/
   | url         | string  | url the 'buy now' button will link to                         |
 
 ![Product card](https://i.imgur.com/qDCMzwV.png)
+
+- Tagged content cards
+  Cards showcasing any content that can be described with a single thumbnail and a list of tags.
+  
+  | attribute   | type        | description                                                                                                           |
+  |-------------|-------------|-----------------------------------------------------------------------------------------------------------------------|
+  | href        | string/null | optional url the card will link to when clicked                                                                       |
+  | thumbnail   | string      | url to the image that will be displayed in the center part of the card and as the background                          |
+  | title       | string      | title of the card                                                                                                     |
+  | description | string      | short description of the content, try to not exceed one line                                                          |
+  | tags        | array/null  | an array of strings that will be converted to pill-style tags and displayed in the lower righthand corner of the card |
+
+![Tagged content card](https://i.imgur.com/SyakUBF.png)
