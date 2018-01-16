@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "prepublish": "babel --presets=env,react src --out-dir ./dist",
+    "prepublish": "webpack -p --progress --colors --config webpack.config.publish.js",
     "demo": "webpack -p --progress --colors --env=prod",
     "dev": "webpack-dev-server --inline --env=dev"
   },
