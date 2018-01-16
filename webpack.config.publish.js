@@ -8,7 +8,10 @@ module.exports = {
   entry: path.resolve(SRC_DIR, 'index.js'),
   output: {
     path: DIST_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    library: 'cards',
+    libraryTarget: "commonjs2",
+    libraryExport: "default"
   },
   module: {
     loaders: [
