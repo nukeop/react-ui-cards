@@ -1,0 +1,33 @@
+.user-card-stats {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+  font-size: 0.75rem;
+}
+
+.stat-container {
+  border-top: 2px solid rgba(#7f8c8d, 0.2);
+  border-right: 2px solid rgba(#7f8c8d, 0.2);
+  min-width: 4rem;
+  padding: 0.25rem;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.stat-name {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  color: #7f8c8d;
+}
+
+.stat-value {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  color: #2c3e50;
+  font-weight: bold;
+}

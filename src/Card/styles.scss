@@ -1,11 +1,24 @@
+a.card-link {
+  display: flex;
+  text-decoration: none;
+}
+
 .card {
   position: relative;
   max-width: 100%;
   width: 250px;
+  min-width: 250px;
   min-height: 350px;
   display: flex;
   flex-flow: column;
   background-color: #ecf0f1;
   border-radius: 0.25rem;
   margin: 1rem;
+  user-select: none;
+  transition: 0.25s;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 10px -10px rgba(#7f8c8d, 0.5);
+  }
 }

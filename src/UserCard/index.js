@@ -4,6 +4,7 @@ import Card from '../Card';
 import UserCardHeader from './UserCardHeader';
 import UserCardAvatar from './UserCardAvatar';
 import UserCardBody from './UserCardBody';
+import UserCardStats from './UserCardStats';
 
 class UserCard extends React.Component {
   constructor(props) {
@@ -11,15 +12,20 @@ class UserCard extends React.Component {
   }
   
   render() {
+    console.log(this.props);
     let {
+      href,
       header,
       avatar,
       name,
-      positionName
+      positionName,
+      stats
     } = this.props;
     
     return (
-      <Card>
+      <Card
+	 href={href}
+	 >
 	<UserCardHeader
 	  src={header}
 	  />
@@ -32,6 +38,15 @@ class UserCard extends React.Component {
 	  >
 	  {this.props.children}
 	</UserCardBody>
+
+	{
+	  stats !== undefined
+	    ? <UserCardStats
+		   stats={stats}
+		   />
+	    : null
+	}
+	
       </Card>
     );
   }
