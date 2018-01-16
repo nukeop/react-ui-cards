@@ -1,0 +1,48 @@
+.product-card-description-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  
+  flex: 0 0 auto;
+  height: 50%;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+
+  .row {
+    display: flex;
+    flex-flow: row;
+    margin-top: 0.5rem;
+  }
+}
+
+.product-card-name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #2c3e50;
+}
+
+.product-card-description {
+  color: #95a5a6;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.buy-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ecf0f1;
+  background-color: #1abc9c;
+  border-radius: 0.25rem;
+  transition: 0.25s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #16a085;
+  }
+}

@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import UserCard from '../src/UserCard';
+import { UserCard, ProductCard } from '../src';
 
 import './styles.scss';
 
@@ -21,7 +21,7 @@ const demo = () => {
       <h2>
 	User cards
       </h2>
-      <div className="card-container">
+      <div className='card-container'>
 	<UserCard
 	   cardClass='float'
 	   header='https://i.imgur.com/w5tX1Pn.jpg'
@@ -72,6 +72,35 @@ const demo = () => {
 	       value: 54
 	     }
 	   ]}
+	   />
+      </div>
+      <h2>
+	Product cards
+      </h2>
+      <div className='card-container'>
+	<ProductCard
+	   photos={[
+	     'https://i.imgur.com/jRVDeI8.jpg',
+	     'https://i.imgur.com/raPe27t.jpg',
+	     'https://i.imgur.com/IpEsYSH.jpg'
+	   ]}
+	   price='$99'
+	   productName='Headphones'
+	   description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
+	   rating={3}
+	   url='https://github.com/nukeop'
+	   />
+	<ProductCard
+	   photos={[
+	     'https://i.imgur.com/t7DTziH.jpg',
+	     'https://i.imgur.com/kA5lx6t.jpg',
+	     'https://i.imgur.com/cUsl6Gs.jpg'
+	   ]}
+	   price='$1.50'
+	   productName='Cupcake'
+	   description='Nullam velit leo, pulvinar non metus feugiat, pharetra ornare enim. Vivamus ac quam a purus venenatis fringilla.'
+	   rating={5}
+	   url='https://github.com/nukeop'
 	   />
       </div>
       
