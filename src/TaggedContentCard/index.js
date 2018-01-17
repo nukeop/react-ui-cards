@@ -6,6 +6,10 @@ import CardOverlay from './CardOverlay';
 import './styles.scss';
 
 class TaggedContentCard extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
   render() {
     let {
       href,

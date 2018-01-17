@@ -1,0 +1,9 @@
+.flipping-card {
+  perspective: 1000px;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}

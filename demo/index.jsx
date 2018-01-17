@@ -2,7 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import { UserCard, ProductCard, TaggedContentCard } from '../src';
+import {
+  UserCard,
+  ProductCard,
+  TaggedContentCard,
+  FlippingCard,
+  FlippingCardFront,
+  FlippingCardBack
+} from '../src';
 
 import './styles.scss';
 
@@ -140,6 +147,83 @@ const demo = () => {
 	     'meat'
 	   ]}
 	   />
+      </div>
+      <h2>
+	Flipping cards
+      </h2>
+      <div className='card-container'>
+	<FlippingCard>
+          <FlippingCardBack>
+            <div
+	       style={{
+		 width: '100%',
+		 height: '100%',
+		 backgroundSize: 'contain',
+		 backgroundPosition: 'center',
+		 backgroundImage: 'url(https://i.imgur.com/wjbYGNv.jpg)'
+	       }}>
+	    </div>
+	  </FlippingCardBack>
+          <FlippingCardFront>
+	    <div
+	       style={{
+		 width: '100%',
+		 height: '100%',
+		 backgroundSize: 'contain',
+		 backgroundPosition: 'center',
+		 backgroundImage: 'url(https://i.imgur.com/3sKjY8V.jpg)'
+	       }}>
+	    </div>
+	  </FlippingCardFront>
+	</FlippingCard>
+	<FlippingCard>
+          <FlippingCardBack>
+            <div
+	       style={{
+		 width: '100%',
+		 height: '100%',
+		 backgroundSize: 'contain',
+		 backgroundPosition: 'center',
+		 backgroundImage: 'url(https://i.imgur.com/m0GnZH3.jpg)'
+	       }}>
+	    </div>
+	  </FlippingCardBack>
+          <FlippingCardFront>
+	    <div
+	       style={{
+		 width: '100%',
+		 height: '100%',
+		 backgroundSize: 'contain',
+		 backgroundPosition: 'center',
+		 backgroundImage: 'url(https://i.imgur.com/E1jz6WQ.jpg)'
+	       }}>
+	    </div>
+	  </FlippingCardFront>
+	</FlippingCard>
+	<FlippingCard>
+          <FlippingCardBack>
+            <div
+	       style={{
+		 width: '100%',
+		 height: '100%',
+		 backgroundSize: 'contain',
+		 backgroundPosition: 'center',
+		 backgroundImage: 'url(https://i.imgur.com/1abAoUz.jpg)'
+	       }}>
+	    </div>
+	  </FlippingCardBack>
+          <FlippingCardFront>
+	    <div
+	       style={{
+		 width: '100%',
+		 height: '100%',
+		 backgroundSize: 'contain',
+		 backgroundPosition: 'center',
+		 backgroundImage: 'url(https://i.imgur.com/UjbK2Wb.png)'
+	       }}>
+	    </div>
+	  </FlippingCardFront>
+	</FlippingCard>
       </div>
     </div>
   );

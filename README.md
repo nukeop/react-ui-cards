@@ -1,6 +1,7 @@
 # react-ui-cards
 
-Various card components for React.
+Various stylish card components for React.
+Focused on being ready to use with little modifications. Supply your data and you're good to go.
 
 ## Live demo
 https://nukeop.github.io/react-ui-cards/
@@ -47,3 +48,21 @@ https://nukeop.github.io/react-ui-cards/
   | tags        | array/null  | an array of strings that will be converted to pill-style tags and displayed in the lower righthand corner of the card |
 
 ![Tagged content card](https://i.imgur.com/SyakUBF.png)
+
+- Flipping card
+  A card with a front and back side. Flips over on hover. Any React component can be displayed on either side.
+  
+  This card is a bit different than the other ones - it has no attributes. To define it, you have to create a nested structure and pass your content as children:
+  
+  ```javascript
+	  <FlippingCard>
+          <FlippingCardBack>
+			  Content that will be displayed on the back of the card
+		  </FlippingCardBack>
+		  <FlippingCardFront>
+			  Content that will be displayed on the front of the card
+		  </FlippingCardFront>
+	</FlippingCard>
+  ```
+  
+  See demo page for an example in action.
