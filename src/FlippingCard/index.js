@@ -13,9 +13,11 @@ class FlippingCard extends React.Component {
   render() {
     return (
       <Card
-	 className='flipping-card'
+	 className='flipping-card-container'
 	 >
-	{this.props.children}
+        <div className='flipping-card'>
+	  {this.props.children}
+	</div>
       </Card>
     );
   }

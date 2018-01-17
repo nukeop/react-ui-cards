@@ -13,5 +13,10 @@
     background-position: center;
     background-size: cover;
     filter: blur(20px) brightness(0.75);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
+    transform: translateZ(0);
+    will-change: transform;
   }
 }
