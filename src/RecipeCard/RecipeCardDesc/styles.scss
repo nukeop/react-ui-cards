@@ -4,16 +4,25 @@
     justify-content:center;
 
 
-    font-size: 1rem;
-
-    color:#00695C;
-
     div {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
 	padding: 1rem;
+	flex: 1 1 auto;
+
+	&:hover{
+	    background:#F8BBD0;
+	    color:#455A64;
+	}
     }
 
     .title {
 	font-size: 1.25rem;
+    }
+
+    span.fa:not(.fa-heart-o){
+	margin-right: 0.25rem;
     }
 }
 

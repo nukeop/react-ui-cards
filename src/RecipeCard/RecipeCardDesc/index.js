@@ -8,7 +8,6 @@ class RecipeCardDesc extends React.Component{
   render(){
     let{
       title,
-      heart,
       time,
       servings
     } = this.props;
@@ -20,15 +19,16 @@ class RecipeCardDesc extends React.Component{
 	</div>
 
 	<div className='heart'>
-	  <FontAwesome name='heart'/>
-	  {heart}
+	  <FontAwesome name='heart-o'/>
 	</div>
 
 	<div className= 'time'>
-	  {time}
+	    <FontAwesome name='hourglass-half'/>
+	    {time}
 	</div>
 
-	<div className= 'servings'>
+	    <div className= 'servings'>
+	    <FontAwesome name='user-o' />
 	  {servings}
 	</div>
 

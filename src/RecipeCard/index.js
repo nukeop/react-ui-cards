@@ -16,7 +16,6 @@ class RecipeCard extends React.Component{
 	    href,
 	    thumbnail,
 	    title,
-	    heart,
 	    time,
 	    servings
 	} = this.props;
@@ -30,7 +29,6 @@ class RecipeCard extends React.Component{
 
 		<RecipeCardDesc
 		   title={title}
-		   heart={heart}
 		   time={time}
 		   servings={servings}
 		   />
