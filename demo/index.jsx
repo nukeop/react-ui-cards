@@ -24,7 +24,6 @@ const render = Component => {
 }
 
 const demo = () => {
-  console.log(RecipeCard);
   return (
     <div>
       <h2>
