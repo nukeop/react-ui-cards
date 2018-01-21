@@ -1,0 +1,22 @@
+.recipe-card{
+    position:relative;
+    display:flex;
+    flex-flow:column;
+    background-color:#E9D1D1;
+    width: 450px;
+    overflow: hidden;
+
+    transition: 0.2s;
+
+    
+    &:hover{
+	transform:scale(1.1);
+	opacity:0.5;
+    }
+}
+
+
+a.recipe-card-link{
+    display:flex;
+    text-decoration:none;
+}

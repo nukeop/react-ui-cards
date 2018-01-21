@@ -1,0 +1,19 @@
+.recipe-card-desc{
+    display:flex;
+    flex-flow:row;
+    justify-content:center;
+
+
+    font-size: 1rem;
+
+    color:#00695C;
+
+    div {
+	padding: 1rem;
+    }
+
+    .title {
+	font-size: 1.25rem;
+    }
+}
+
