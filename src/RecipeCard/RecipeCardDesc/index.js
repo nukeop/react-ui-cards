@@ -18,9 +18,9 @@ class RecipeCardDesc extends React.Component{
 	  {title}
 	</div>
 
-	<a href={} className='heart'>
+	<button className='heart'>
 	  <FontAwesome name='heart-o'/>
-	</a>
+	</button>
 
 	<div className= 'time'>
 	    <FontAwesome name='hourglass-half'/>

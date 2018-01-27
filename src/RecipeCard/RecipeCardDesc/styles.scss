@@ -1,28 +1,30 @@
 .recipe-card-desc{
-    display:flex;
-    flex-flow:row;
-    justify-content:center;
+  display:flex;
+  flex-flow:row;
+  justify-content:center;
 
 
-    div {
-	display: flex;
-	flex-flow: row;
-	justify-content: center;
-	padding: 1rem;
-	flex: 1 1 auto;
+  div,button {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 1rem;
+    flex: 1 1 auto;
+    background-color:#FCE4EC;
+    border: none;
 
-	&:hover{
-	    background:#F8BBD0;
-	    color:#455A64;
-	}
+    &:hover{
+      background:#F8BBD0;
+      color:#455A64;
     }
+  }
 
-    .title {
-	font-size: 1.25rem;
-    }
+  .title {
+    font-size: 1.25rem;
+  }
 
-    span.fa:not(.fa-heart-o){
-	margin-right: 0.25rem;
-    }
+  span.fa:not(.fa-heart-o){
+    margin-right: 0.25rem;
+  }
 }
 
