@@ -20,10 +20,10 @@ class RecipeCard extends React.Component{
 	    servings
 	} = this.props;
 	return(
-	    <a className='recipe-card-link' href={href}>
               <Card className='recipe-card'>
 		
 		<RecipeCardContent
+		   href={href}
 		   thumbnail={thumbnail}
 		   />
 
@@ -34,7 +34,6 @@ class RecipeCard extends React.Component{
 		   />
 		
 	      </Card>
-	  </a>
 	);
     }
 }
