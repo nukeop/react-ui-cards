@@ -64,12 +64,13 @@ https://nukeop.github.io/react-ui-cards/
 		  </FlippingCardFront>
 	</FlippingCard>
   ```
-  
+    
+  See demo page for an example in action.
   
   
   ![Recipe card](https://i.imgur.com/PfE6Cf0.png)
   
-  -Recipe card
+  - Recipe card
    Cards you can use to show dishes' names, time they take to cook and how big the portions are. Heart sign can be used as "Add to favorite" button.
    
    | attribute   | type         | description                                                            |
@@ -80,6 +81,3 @@ https://nukeop.github.io/react-ui-cards/
    | time        | string       | amount of time it will take to prepare the dish                        |
    | servings    | string       | estimation of portions' size                                           |
    
-   
-  
-  See demo page for an example in action.
