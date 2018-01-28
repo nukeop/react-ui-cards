@@ -4,6 +4,7 @@ import TaggedContentCard from './TaggedContentCard';
 import FlippingCard from './FlippingCard';
 import FlippingCardFront from './FlippingCard/FlippingCardFront';
 import FlippingCardBack from './FlippingCard/FlippingCardBack';
+import RecipeCard from './RecipeCard';
 
 export default {
   UserCard,
@@ -11,7 +12,8 @@ export default {
   TaggedContentCard,
   FlippingCard,
   FlippingCardFront,
-  FlippingCardBack
+  FlippingCardBack,
+  RecipeCard
 };
 
 export {
@@ -20,5 +22,6 @@ export {
   TaggedContentCard,
   FlippingCard,
   FlippingCardFront,
-  FlippingCardBack
+  FlippingCardBack,
+  RecipeCard
 };

@@ -65,4 +65,21 @@ https://nukeop.github.io/react-ui-cards/
 	</FlippingCard>
   ```
   
+  
+  
+  ![Recipe card](https://i.imgur.com/PfE6Cf0.png)
+  
+  -Recipe card
+   Cards you can use to show dishes' names, time they take to cook and how big the portions are. Heart sign can be used as "Add to favorite" button.
+   
+   | attribute   | type         | description                                                            |
+   |-------------|--------------|------------------------------------------------------------------------|
+   | href        | string/null  | optional url the card will link to when clicked                        |
+   | thumbnail   | string       | url to the image that will be displayed at the top of other elements   |
+   | title       | string       | name of the dish                                                       |
+   | time        | string       | amount of time it will take to prepare the dish                        |
+   | servings    | string       | estimation of portions' size                                           |
+   
+   
+  
   See demo page for an example in action.
