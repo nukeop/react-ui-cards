@@ -3,21 +3,21 @@ import React from 'react';
 import './styles.scss';
 
 class RecipeCardContent extends React.Component{
-    render(){
-      let{
-	thumbnail,
-	href
-	} = this.props;
-	return(
-	  <a href={href} className='recipe-card-content'>
+  render(){
+    let{
+      thumbnail,
+      href
+    } = this.props;
+    return(
+      <a href={href} className='recipe-card-content'>
 
-		  <div className='thumbnail'>
-		      <img src={thumbnail}/>
-		  </div>
+	<div className='thumbnail'>
+	  <div style={{backgroundImage: `url(${thumbnail})`}}/>
+	</div>
 
-	      </a>
-	);
-    }
+      </a>
+    );
+  }
 }
 
 export default RecipeCardContent;

@@ -9,7 +9,8 @@ class RecipeCardDesc extends React.Component{
     let{
       title,
       time,
-      servings
+      servings,
+      likeCallback
     } = this.props;
     return(
       <div className= 'recipe-card-desc'>
@@ -18,9 +19,9 @@ class RecipeCardDesc extends React.Component{
 	  {title}
 	</div>
 
-	<button className='heart'>
+	<a className='heart' onClick={likeCallback}>
 	  <FontAwesome name='heart-o'/>
-	</button>
+	</a>
 
 	<div className= 'time'>
 	    <FontAwesome name='hourglass-half'/>

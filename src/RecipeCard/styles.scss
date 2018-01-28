@@ -1,18 +1,19 @@
 .recipe-card{
-    position:relative;
-    display:flex;
-    flex-flow:column;
-    width: 450px;
-    overflow: hidden;
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  width: 450px;
+  overflow: hidden;
 
-    font-size: 1rem;
-    color:#546E7A;
-    font-family:Verdana, sans-serif;
- 
+  font-size: 1rem;
+  background-color:#FCE4EC;
+  color:#546E7A;
+  font-family:Verdana, sans-serif;
+  
 }
 
 
 a.recipe-card-link{
-    display:flex;
-    text-decoration:none;
+  display:flex;
+  text-decoration:none;
 }
