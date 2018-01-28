@@ -70,7 +70,7 @@ https://nukeop.github.io/react-ui-cards/
   
   ![Recipe card](https://i.imgur.com/PfE6Cf0.png)
   
-  - Recipe card
+- Recipe card
    Cards you can use to show dishes' names, time they take to cook and how big the portions are. Heart sign can be used as "Add to favorite" button.
    
    | attribute   | type         | description                                                            |
