@@ -8,7 +8,8 @@ import {
   TaggedContentCard,
   FlippingCard,
   FlippingCardFront,
-  FlippingCardBack
+  FlippingCardBack,
+  RecipeCard
 } from '../src';
 
 import './styles.scss';
@@ -225,7 +226,36 @@ const demo = () => {
 	  </FlippingCardFront>
 	</FlippingCard>
       </div>
-    </div>
+      
+      <h2>
+      Recipe Cards
+      </h2>
+      <div className='card-container'>
+	<RecipeCard
+	   href='https://github.com/nekonee'
+	   thumbnail='https://i.imgur.com/VkHTicg.jpg'
+	   title='Fluffy pancakes'
+	   time='0:30'
+	   servings='3-5'
+	   />
+      
+	<RecipeCard
+	   href='https://github.com/nekonee'
+	   thumbnail='https://i.imgur.com/0308iuN.jpg'
+	   title='Cupcakes'
+	   time='1:30'
+	   servings='4-6'
+	   />
+	
+	<RecipeCard
+	   href='https://github.com/nekonee'
+	   thumbnail='https://i.imgur.com/s9oR6BE.jpg'
+	   title='Macarons'
+	   time='2:00'
+	   servings='7-10'
+	   />
+      </div>
+     </div>
   );
 }
 
