@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - 6
+
+branches:
+  only:
+  - master
+
+script:
+  npm run demo
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local-dir: demo
+
+cache:
+  directories:
+    - node_modules
