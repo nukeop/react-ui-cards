@@ -1,0 +1,26 @@
+.news-header-background{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  
+  .thumbnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.4s;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  div{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+}

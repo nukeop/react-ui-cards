@@ -1,0 +1,29 @@
+.news-header{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  color: #d2dae2;
+}
+
+.title{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  flex: 1 1 auto;
+  align-items: left;
+  text-overflow: ellipsis;
+  display: inline;
+  font-size: 1.25rem;
+ // padding-bottom: 1.2rem;
+}
+
+.bottom{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: left;
+  flex: 1 1 auto;
+  font-size: 0.7rem;
+  //padding-bottom: 0.3rem;
+  
+}
