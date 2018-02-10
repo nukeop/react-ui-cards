@@ -9,7 +9,8 @@ import {
   FlippingCard,
   FlippingCardFront,
   FlippingCardBack,
-  RecipeCard
+  RecipeCard,
+  NewsHeaderCard
 } from '../src';
 
 import './styles.scss';
@@ -258,6 +259,22 @@ const demo = () => {
 	      likeCallback={() => alert('You added Macarons to favourites')}
 	      />
       </div>
+
+      <h2>
+	News headers cards
+      </h2>
+      <div className='card-container'>
+	<NewsHeaderCard
+	   href='https://github.com/nekonee'
+	   thumbnail='https://luciaprosino.files.wordpress.com/2013/04/nanga-parbat.jpg'
+	   title='Zesralem sie i smierdzi'
+	   author='Jan Pedal Drugi'
+	   date='Apr 2, 2005'
+	   />
+	<NewsHeaderCard />
+	<NewsHeaderCard />
+      </div>
+      
     </div>
   );
 }
