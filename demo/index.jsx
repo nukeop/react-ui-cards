@@ -267,12 +267,24 @@ const demo = () => {
 	<NewsHeaderCard
 	   href='https://github.com/nekonee'
 	   thumbnail='https://luciaprosino.files.wordpress.com/2013/04/nanga-parbat.jpg'
-	   title='Zesralem sie i smierdzi'
-	   author='Jan Pedal Drugi'
-	   date='Apr 2, 2005'
+	   title='Polish mountaineers on the top'
+	   author='Daily Sport'
+	   date='Feb 2, 2018'
 	   />
-	<NewsHeaderCard />
-	<NewsHeaderCard />
+	<NewsHeaderCard
+	   href='https://github.com/nekonee'
+	   thumbnail='http://www.cavegirl.co.nz/wp-content/uploads/2013/09/BloodOrangeMed-740x550.jpg'
+	   title='Most poisonous dishes you must avoid'
+	   author='Daily Health'
+	   date='Jan 2, 2018'
+	    />
+	<NewsHeaderCard
+	   href='https://github.com/nekonee'
+	   thumbnail='https://c1.staticflickr.com/5/4071/4528869007_4484c3d401_b.jpg'
+	   title='Cool looking test tubes'
+	   author='Daily Science'
+	   date='Mar 2, 2018'
+	   />
       </div>
       
     </div>
