@@ -26,7 +26,8 @@ class NewsHeader extends React.Component{
 	    </div>
 	</div>
 	
-	 </div>    );
+      </div>
+    );
   }
 }
 
