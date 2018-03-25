@@ -4,6 +4,8 @@
   flex-flow: row;
   color: #dff9fb;
   width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
   
   div{
     display: flex;
@@ -15,14 +17,24 @@
     text-overflow: ellipsis;
     
     &.author{
-      margin-right: 0.25rem;
+      text-shadow: 0.1em 0.1em 0.2em black;
+    }
+
+    &.date{
+      text-shadow: 0.1em 0.1em 0.2em black;
     }
   }
 
   .title{
+    padding-bottom: 0.75rem;
     display: block;
     justify-content: center;
     font-size: 1.5rem;
+    text-shadow: 0.1em 0.1em 0.2em black;
   }
 
+  .bottom{
+    justify-content: space-between;
+  }
 }
+
