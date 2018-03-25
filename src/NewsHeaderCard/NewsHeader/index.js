@@ -24,6 +24,7 @@ class NewsHeader extends React.Component{
 	    <div className= 'date'>
 	      {date}
 	    </div>
+	    
 	</div>
 	
       </div>

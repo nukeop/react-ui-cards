@@ -14,7 +14,7 @@ class NewsHeaderBackground extends React.Component{
 	  <div style ={{backgroundImage : `url(${thumbnail})`}}/>
 	</div>
 	
-	</div>
+      </div>
     );
   }
 }
