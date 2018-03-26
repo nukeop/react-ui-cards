@@ -86,6 +86,8 @@ https://nukeop.github.io/react-ui-cards/
   
   - News header card
     Cards you can use on the news site, shows the title, author and date it was published. Click on image to see the exact news.
+    
+    
    | attribute | type       | description                                               |
    |-----------|------------|-----------------------------------------------------------|
    |href       |string/null | optional url the card will link to when clicked           |
