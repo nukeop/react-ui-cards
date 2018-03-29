@@ -1,6 +1,6 @@
 {
   "name": "react-ui-cards",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Various card components for React",
   "main": "index.js",
   "scripts": {
