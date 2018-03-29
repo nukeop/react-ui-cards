@@ -10,10 +10,14 @@ class NewsHeaderBackground extends React.Component{
     return(
       <div className='news-header-background'>
 
-	<div className='thumbnail'>
-	  <div style ={{backgroundImage : `url(${thumbnail})`}}/>
-	</div>
-	
+        <div className='overlay'>
+
+        </div>
+
+        <div className='thumbnail'>
+          <div style ={{backgroundImage : `url(${thumbnail})`}}/>
+        </div>
+
       </div>
     );
   }
