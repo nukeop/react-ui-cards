@@ -21,23 +21,24 @@ class ProductCard extends React.Component {
       rating,
       url
     } = this.props;
+
     return (
       <Card
-	 className='product-card'
-	 >
-	<ProductCardGallery
-	   photos={photos}
-	   />
-	<PriceTag
-	   price={price}
-	   />
+        className='product-card'
+      >
+        <ProductCardGallery
+          photos={photos}
+        />
+        <PriceTag
+          price={price}
+        />
         <ProductCardDescription
-	   productName={productName}
-	   description={description}
-	   rating={rating}
-	   url={url}
-	   />
-	
+          productName={productName}
+          description={description}
+          rating={rating}
+          url={url}
+        />
+
       </Card>
     );
   }

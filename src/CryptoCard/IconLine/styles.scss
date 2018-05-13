@@ -1,0 +1,54 @@
+.crypto-card-icon-line {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+
+  .left,
+  .right,
+  .crypto-short-name {
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 auto;
+    align-items: center;
+  }
+
+  .left {
+    justify-content: flex-start;
+    color: rgba(#fff, 0.4);
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+
+  .crypto-icon {
+    display: flex;
+    height: 24px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .crypto-short-name {
+    height: 100%;
+    margin-left: 0.5em;
+  }
+
+  .trend {
+    &.green {
+      color: #2ecc71;
+    }
+
+    &.yellow {
+      color: #f1c40f;
+    }
+
+    &.red {
+      color: #e74c3c;
+    }
+  }
+}

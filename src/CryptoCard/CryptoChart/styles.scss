@@ -1,0 +1,14 @@
+.crypto-chart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 40%;
+  display: flex;
+  width: 100%;
+
+  canvas {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
