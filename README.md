@@ -6,6 +6,14 @@ Focused on being ready to use with little modifications. Supply your data and yo
 ## Live demo
 https://nukeop.github.io/react-ui-cards/
 
+## npm
+https://www.npmjs.com/package/react-ui-cards
+
+## Installation
+```bash
+$ npm install --save react-ui-cards
+```
+
 ## Card types
 ### User cards
 Cards representing users or people.
