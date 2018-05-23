@@ -1,26 +1,37 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 import Card from '../Card';
 import FlippingCardBack from './FlippingCardBack';
 import FlippingCardFront from './FlippingCardFront';
 import './styles.scss';
 
-class FlippingCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const FlippingCard = props => {
+  let {
+    children,
+    className
+  } = props;
 
-  render() {
-    return (
-      <Card
-	 className='flipping-card-container'
-	 >
-        <div className='flipping-card'>
-	  {this.props.children}
-	</div>
-      </Card>
-    );
-  }
+console.log(PropTypes);
+
+  return (
+    <Card
+      className={classnames('flipping-card-container', className)}
+    >
+      <div className='flipping-card'>
+        {children}
+      </div>
+    </Card>
+  );
 }
+
+FlippingCard.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element
+  ]),
+  className: PropTypes.string
+};
 
 export default FlippingCard;
