@@ -1,0 +1,18 @@
+.issuer-icon {
+  position: absolute;
+  z-index: 10;
+
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+
+  img {
+    width: 20%;
+  }
+}
