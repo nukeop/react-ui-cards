@@ -11,7 +11,8 @@ import {
   FlippingCardBack,
   RecipeCard,
   NewsHeaderCard,
-  CryptoCard
+  CryptoCard,
+  PaymentCard
 } from '../src';
 
 import './styles.scss';
@@ -322,6 +323,24 @@ const demo = () => {
           trendDirection={-1}
           chartData={[90, 120, 115, 85, 75, 92, 70, 101, 111, 137]}
           chartColor='#ecf0f1'
+        />
+      </div>
+
+      <h2>Payment cards</h2>
+      <div className="card-container">
+        <PaymentCard
+          issuerIcon="https://i.imgur.com/MulWZzk.png"
+          number="4445 8509 0753 1365"
+        />
+        <PaymentCard
+          background="linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%)"
+          issuerIcon="https://i.imgur.com/31vser1g.png"
+          number="5458 8074 7691 1254"
+        />
+        <PaymentCard
+          background="linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%)"
+          issuerIcon="https://i.imgur.com/CRdoJbX.png"
+          number="3421 7270 0864 956"
         />
       </div>
 
