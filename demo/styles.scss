@@ -17,6 +17,19 @@ h2 {
   margin: 2rem 0 0 2rem;
 }
 
+.links {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+
+  a {
+    text-decoration: none;
+    margin: 1rem;
+  }
+}
+
 .card-container {
   display: flex;
   flex-flow: row;
@@ -24,7 +37,7 @@ h2 {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  
+
   @media screen and (max-width: 768px) {
     flex-flow: column;
   }
