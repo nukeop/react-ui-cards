@@ -327,18 +327,20 @@ const demo = () => {
       </div>
 
       <h2>Payment cards</h2>
-      <div className="card-container">
+      <div className="card-container" style={{padding: '3rem 1rem 6rem'}}>
         <PaymentCard
           issuerIcon="https://i.imgur.com/MulWZzk.png"
+          backgroundPattern="spiral"
           number="4445 8509 0753 1365"
         />
         <PaymentCard
-          background="linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%)"
+          background="linear-gradient(135deg, #00b4db, #0083b0)"
           issuerIcon="https://i.imgur.com/31vser1g.png"
           number="5458 8074 7691 1254"
         />
         <PaymentCard
-          background="linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%)"
+          background="linear-gradient( 135deg, #11998e, #38ef7d)"
+          backgroundPattern="triangles"
           issuerIcon="https://i.imgur.com/CRdoJbX.png"
           number="3421 7270 0864 956"
         />
