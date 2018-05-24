@@ -4,6 +4,7 @@ import TaggedContentCard from './TaggedContentCard';
 import FlippingCard from './FlippingCard';
 import FlippingCardFront from './FlippingCard/FlippingCardFront';
 import FlippingCardBack from './FlippingCard/FlippingCardBack';
+import PaymentCard from './PaymentCard';
 import RecipeCard from './RecipeCard';
 import NewsHeaderCard from './NewsHeaderCard';
 import CryptoCard from './CryptoCard';
@@ -15,6 +16,7 @@ export default {
   FlippingCard,
   FlippingCardFront,
   FlippingCardBack,
+  PaymentCard,
   RecipeCard,
   NewsHeaderCard,
   CryptoCard
@@ -27,6 +29,7 @@ export {
   FlippingCard,
   FlippingCardFront,
   FlippingCardBack,
+  PaymentCard,
   RecipeCard,
   NewsHeaderCard,
   CryptoCard
