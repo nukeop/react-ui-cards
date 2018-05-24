@@ -100,7 +100,7 @@ Cards you can use on the news site, shows the title, author and date it was publ
 | author    | string      | author of aricle linked in href                           |
 | date      | string      | date of publishing                                        |
 
-   ![News header card](https://i.imgur.com/3fZKPyS.png)
+![News header card](https://i.imgur.com/3fZKPyS.png)
 
 ### Cryptocurrency card
 Cards that show cryptocurrency-related data, including a chart. Can be used for showing other data, such as fiat currency or stock market prices.
@@ -116,4 +116,19 @@ Cards that show cryptocurrency-related data, including a chart. Can be used for 
 | chartColor        | string            | Color of the line on the chart                                                   |
 | chartData         | array\[integer\]  | An array of integer values to be displayed on the chart                          |
 
-  ![Cryptocurrency card](http://i.imgur.com/7yGpFnw.png)
+![Cryptocurrency card](http://i.imgur.com/7yGpFnw.png)
+
+### Payment card
+Card that represents a credit card, a debit card, or other similar cards. Flips on hover to reveal the back.
+
+| attribute         | type           | description                                                                                                                                                      |
+|-------------------|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| background        | string         | Valid CSS background string. If not provided, a default background is used.                                                                                      |
+| backgroundPattern | string/null    | Lets you select one of the patterns to display in the background. Can be either "worldMap", "triangles", or "spiral". Null results in no pattern being displayed |
+| issuerIcon        | string/element | Card issuer icon. Either a link to the image with an icon, or a React element to render                                                                          |
+| number            | string         | Payment card number                                                                                                                                              |
+| date              | string         | The "valid thru" date                                                                                                                                            |
+| name              | string         | Name displayed on the card                                                                                                                                       |
+| cvv               | string         | CVV code displayed on the back of the card                                                                                                                       |
+
+![Payment cards](http://i.imgur.com/0Nb9K1B.png)

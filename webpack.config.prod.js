@@ -20,6 +20,9 @@ module.exports = {
       }, {
         test: /\.scss$/,
         loader: 'style-loader!css-loader?importLoaders=1&modules&localIdentName=[local]!sass-loader'
+      }, {
+        test: /\.svg$/,
+        loader: 'raw-loader'
       }
     ]
   },

@@ -6,7 +6,7 @@ import TitleLine from './TitleLine';
 import IconLine from './IconLine';
 import CryptoChart from './CryptoChart';
 
-import styles from './styles.scss';
+import './styles.scss';
 
 class CryptoCard extends React.Component {
   constructor(props) {

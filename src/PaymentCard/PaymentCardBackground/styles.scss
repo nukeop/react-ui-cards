@@ -1,0 +1,36 @@
+.payment-card-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .svg-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &.triangles>svg {
+      opacity: 0.4;
+      top: -25%;
+    }
+
+    &.worldMap>svg {
+      top: -40%;
+      opacity: 0.6;
+    }
+
+    &.spiral>svg {
+      top: 0;
+      height: 100%;
+      width: auto;
+      opacity: 0.5;
+    }
+  }
+
+  svg {
+    position: relative;
+    width: 100%;
+    fill: #ecf0f1;
+  }
+}

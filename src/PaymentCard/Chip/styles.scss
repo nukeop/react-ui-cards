@@ -1,0 +1,20 @@
+.payment-card {
+  .chip-container {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .chip {
+    position: relative;
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 2.25rem;
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    border: 2px solid rgba(#2c3e50, 0.2);
+    margin-left: 2rem;
+    z-index: 10;
+  }
+}

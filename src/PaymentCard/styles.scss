@@ -1,0 +1,13 @@
+.payment-card {
+  width: 21rem;
+  min-width: 21rem;
+  max-width: 21rem;
+  height: 13.5rem;
+  min-height: 13.5rem;
+  max-height: 13.5rem;
+
+  .front {
+    display: flex;
+    flex-flow: column;
+  }
+}
