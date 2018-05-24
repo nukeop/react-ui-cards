@@ -1,14 +1,10 @@
 .payment-card {
-  overflow: hidden;
-
   width: 21rem;
   min-width: 21rem;
   max-width: 21rem;
   height: 13.5rem;
   min-height: 13.5rem;
   max-height: 13.5rem;
-
-  box-shadow: 0 10px 30px rgba(#2c3e50, 0.5);
 
   .front {
     display: flex;
