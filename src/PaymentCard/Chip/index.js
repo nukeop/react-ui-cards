@@ -5,7 +5,10 @@ import styles from './styles.scss';
 
 const Chip = props => {
   return (
-<span className='chip' />
+    <div className="chip-container">
+      <span className='chip' />
+    </div>
+
   );
 }
 

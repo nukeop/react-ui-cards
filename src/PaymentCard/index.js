@@ -9,6 +9,8 @@ import PaymentCardBackground from './PaymentCardBackground';
 import IssuerIcon from './IssuerIcon';
 import PaymentCardNumber from './PaymentCardNumber';
 import Chip from './Chip';
+import PaymentCardDate from './PaymentCardDate';
+import PaymentCardName from './PaymentCardName';
 import './styles.scss';
 
 const PaymentCard = props => {
@@ -16,7 +18,9 @@ const PaymentCard = props => {
     background,
     backgroundPattern,
     issuerIcon,
-    number
+    number,
+    date,
+    name
   } = props;
 
   return (
@@ -29,10 +33,17 @@ const PaymentCard = props => {
         <IssuerIcon
           icon={issuerIcon}
         />
+        <Chip />
         <PaymentCardNumber
           number={number}
         />
-        <Chip />
+        <PaymentCardDate
+          date={date}
+        />
+        <PaymentCardName
+          name={name}
+        />
+
       </FlippingCardFront>
       <FlippingCardBack>
         <div></div>
@@ -48,7 +59,9 @@ PaymentCard.propTypes = {
     PropTypes.string,
     PropTypes.element
   ]).isRequired,
-  number: PropTypes.string.isRequired
+  number: PropTypes.string.isRequired,
+  date: PropTypes.string,
+  name: PropTypes.name
 };
 
 export default PaymentCard;
