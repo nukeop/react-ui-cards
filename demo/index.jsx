@@ -30,6 +30,15 @@ const demo = () => {
   return (
     <div>
       <h2>
+        Links
+      </h2>
+
+      <div className="links">
+        <a href="https://www.npmjs.com/package/react-ui-cards">npm</a> |
+        <a href="https://github.com/nukeop/react-ui-cards">Github</a>
+      </div>
+
+      <h2>
         User cards
       </h2>
       <div className='card-container'>
