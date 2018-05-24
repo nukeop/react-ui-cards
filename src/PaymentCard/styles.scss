@@ -9,4 +9,9 @@
   max-height: 13.5rem;
 
   box-shadow: 0 10px 30px rgba(#2c3e50, 0.5);
+
+  .front {
+    display: flex;
+    flex-flow: column;
+  }
 }
