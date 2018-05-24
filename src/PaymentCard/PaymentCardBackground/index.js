@@ -21,7 +21,8 @@ const PaymentCardBackground = props => {
     backgroundPattern
   } = props;
 
-  let pattern = backgroundPattern || "worldMap";
+  let pattern = backgroundPattern===undefined
+  ? "worldMap" : backgroundPattern;
 
   return (
     <div className="payment-card-background" style={{background: background || defaultBackground}}>
