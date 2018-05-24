@@ -13,8 +13,6 @@ const FlippingCard = props => {
     className
   } = props;
 
-console.log(PropTypes);
-
   return (
     <Card
       className={classnames('flipping-card-container', className)}

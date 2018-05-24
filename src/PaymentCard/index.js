@@ -8,11 +8,13 @@ import FlippingCardBack from '../FlippingCard/FlippingCardBack';
 import PaymentCardBackground from './PaymentCardBackground';
 import IssuerIcon from './IssuerIcon';
 import PaymentCardNumber from './PaymentCardNumber';
+import Chip from './Chip';
 import './styles.scss';
 
 const PaymentCard = props => {
   let {
     background,
+    backgroundPattern,
     issuerIcon,
     number
   } = props;
@@ -22,6 +24,7 @@ const PaymentCard = props => {
       <FlippingCardFront>
         <PaymentCardBackground
           background={background}
+          backgroundPattern={backgroundPattern}
         />
         <IssuerIcon
           icon={issuerIcon}
@@ -29,6 +32,7 @@ const PaymentCard = props => {
         <PaymentCardNumber
           number={number}
         />
+        <Chip />
       </FlippingCardFront>
       <FlippingCardBack>
         <div></div>
@@ -39,6 +43,7 @@ const PaymentCard = props => {
 
 PaymentCard.propTypes = {
   background: PropTypes.string,
+  backgroundPattern: PropTypes.string,
   issuerIcon: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.element
