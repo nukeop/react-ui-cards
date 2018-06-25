@@ -14,11 +14,16 @@ module.exports = {
     libraryExport: "default"
   },
   mode: 'production',
+  devtool: 'source-map',
+  optimization: {
+    namedModules: true
+  },
   module: {
     rules: [
       {
         test: /\.jsx?/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        exclude: /node_modules/
       }, {
         test: /\.css/,
         loader: 'style-loader!css-loader?modules=true&localIdentName=[name]__[local]___[hash:base64:5]'
@@ -30,9 +35,5 @@ module.exports = {
         loader: 'raw-loader'
       }
     ]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.NamedModulesPlugin()
-  ]
+  }
 };
