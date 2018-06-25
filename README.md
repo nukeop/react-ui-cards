@@ -16,6 +16,18 @@ https://www.npmjs.com/package/react-ui-cards
 $ npm install --save react-ui-cards
 ```
 
+## Development
+### Getting started
+After cloning the repo, run the following commands to start the project in development mode with hot reload:
+
+```shell
+$ npm install
+$ npm run dev
+```
+
+### Contributing
+All contributions are welcome. You can either add something to existing cards, or create a completely new card type.
+
 ## Card types
 ### User cards
 Cards representing users or people.

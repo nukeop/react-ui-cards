@@ -20,8 +20,9 @@ module.exports = {
     contentBase: DEMO_DIR,
     publicPath: 'http://localhost:8080/'
   },
+  mode: 'development',
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?/,
         loader: 'babel-loader'

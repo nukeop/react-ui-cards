@@ -9,8 +9,9 @@ module.exports = {
     path: DEMO_DIR,
     filename: 'bundle.js'
   },
+  mode: 'production',
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?/,
         loader: 'babel-loader'
