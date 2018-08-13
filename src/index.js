@@ -8,6 +8,7 @@ import PaymentCard from './PaymentCard';
 import RecipeCard from './RecipeCard';
 import NewsHeaderCard from './NewsHeaderCard';
 import CryptoCard from './CryptoCard';
+import DropdownCard from './DropdownCard';
 
 export default {
   UserCard,
@@ -19,7 +20,8 @@ export default {
   PaymentCard,
   RecipeCard,
   NewsHeaderCard,
-  CryptoCard
+  CryptoCard,
+  DropdownCard
 };
 
 export {
@@ -32,5 +34,6 @@ export {
   PaymentCard,
   RecipeCard,
   NewsHeaderCard,
-  CryptoCard
+  CryptoCard,
+  DropdownCard
 };

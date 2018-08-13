@@ -12,7 +12,8 @@ import {
   RecipeCard,
   NewsHeaderCard,
   CryptoCard,
-  PaymentCard
+  PaymentCard,
+  DropdownCard
 } from '../src';
 
 import './styles.scss';
@@ -364,6 +365,11 @@ const demo = () => {
         />
       </div>
 
+      <h2>Dropdown cards</h2>
+      <div className='card-container'>
+        <DropdownCard/>
+      </div>
+      
     </div>
   );
 }
