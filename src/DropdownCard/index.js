@@ -15,9 +15,7 @@ class DropdownCard extends React.Component{
     return(
       <Card className='dropdown-card'>
         
-        <NameSurname />
-        <Arrow />
-        <ToggledCard/>
+        <Arrow/>
         
       </Card>
     );
