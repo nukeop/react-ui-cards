@@ -367,7 +367,7 @@ const demo = () => {
 
       <h2>Dropdown cards</h2>
       <div className='card-container'>
-        <DropdownCard/>
+        <DropdownCard />
       </div>
       
     </div>
