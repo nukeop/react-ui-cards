@@ -12,9 +12,16 @@ class DropdownCard extends React.Component{
     super(props);
   }
   render(){
+    let{
+      name,
+      surname
+    } = this.props;
     return(
       <Card className='dropdown-card'>
-        
+        <NameSurname
+          name={ name }
+          surname={ surname }
+          />
         <Arrow/>
         
       </Card>
