@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Card from '../../../Card';
 
 import styles from './styles.scss';
 
@@ -17,10 +16,10 @@ class Info extends React.Component{
       <div className='info-root'>
         
         <div className='first'>
-          infoFirst={ infoFirst }
+          {infoFirst}
         </div>
         <div className='second'>
-          infoSecond={ infoSecond }
+          {infoSecond}
         </div>
         
       </div>

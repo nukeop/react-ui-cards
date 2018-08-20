@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from '../../Card';
 import Email from './Email';
-import Phone from './Phone/';
+import Phone from './Phone';
 import Info from './Info';
 
 import styles from './styles.scss';
@@ -27,7 +27,8 @@ class ToggledCard extends React.Component {
           phone={ phone }
           />
         <Info
-          infoFirst={ infoFirst}
+          style={ (infoSecond) ? { flexFlow:'column' } : { fontSize:'3rem'} }
+          infoFirst={ infoFirst }
           infoSecond={ infoSecond }
           />
       </Card>
