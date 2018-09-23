@@ -10,32 +10,51 @@ import styles from './styles.scss';
 class DropdownCard extends React.Component{
   constructor(props){
     super(props);
+    this.state = {
+      arrowToggled : false
+    };
   }
+
+  toggleArrow() {
+    this.setState(prevState => {
+      return { arrowToggled: !prevState.arrowToggled };
+    });
+  }
+  
   render(){
     let{
       name,
       surname,
+      position,
       email,
       phone,
       infoFirst,
       infoSecond
     } = this.props;
-    return(
-      <Card className='dropdown-card'>
-        <NameSurname
-          name={ name }
-          surname={ surname }
-          />
-        <Arrow/>
-        <ToggledCard
-          email={ email }
-          phone={ phone }
-          infoFirst={ infoFirst }
-          infoSecond={ infoSecond }
-          />
-        
-      </Card>
-    );
+          return(
+            <Card className='dropdown-card'>
+              <NameSurname
+                name={ name }
+                surname={ surname }
+                />
+              <Arrow
+                onClick={this.toggleArrow.bind(this)}
+                position={ this.state.arrowToggled }
+                />
+
+                {
+                  position === false
+                  ?  <ToggledCard
+                email={ email }
+                phone={ phone }
+                infoFirst={ infoFirst }
+                infoSecond={ infoSecond }
+                         />
+                    : <div className='empty'/>
+                };
+                
+            </Card>
+          );
+    }
   }
-}
 export default DropdownCard;

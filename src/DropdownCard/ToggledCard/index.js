@@ -27,7 +27,6 @@ class ToggledCard extends React.Component {
           phone={ phone }
           />
         <Info
-          style={ (infoSecond) ? { flexFlow:'column' } : { fontSize:'3rem'} }
           infoFirst={ infoFirst }
           infoSecond={ infoSecond }
           />

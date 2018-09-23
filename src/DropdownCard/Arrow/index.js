@@ -11,39 +11,38 @@ import styles from './styles.scss';
 class Arrow extends React.Component {
   constructor(props){
     super(props);
-
-    //toggled= true or false
-    this.state = {
-      toggled: false
-    };
   }
 
-  handleClick() {
-    this.setState(prevState =>{
-      return {toggled: !prevState.toggled};
-    });
-  }
-  
   render(){
+    let{
+      onClick,
+      position
+    } = this.props;
+    console.log(position);
+    return (
+      <a onClick={onClick} className='toggle-root'>
+        {
+          position === false
+            ? <ArrowDown />
+            : <ArrowUp/>
+        }
+      </a>
+    );
     
-    if(!this.state.toggled){
-      return(
-        <a className='toggle-root'
-             onClick={ this.handleClick.bind(this)}
-             >
-          <ArrowDown/>
-        </a>
-      );
-    }
-    else{
-      return(
-        <a className='toggle-root'
-             onClick={ this.handleClick.bind(this) }
-             >
-          <ArrowUp/>
-        </a>
-      );
-    }
+    // if(this.props.position === false){
+    //   return(
+    //     <a onClick={onClick} className='toggle-root'>
+    //       <ArrowDown/>
+    //     </a>
+    //   );
+    // }
+    // else{
+    //   return(
+    //     <a className='toggle-root'>
+    //       <ArrowUp/>
+    //     </a>
+    //   );
+    // }
   }
 }
 
