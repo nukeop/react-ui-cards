@@ -1,9 +1,6 @@
 import React from 'react';
 
 import Card from '../../Card';
-import Email from './Email';
-import Phone from './Phone';
-import Info from './Info';
 
 import styles from './styles.scss';
 
@@ -15,21 +12,23 @@ class ToggledCard extends React.Component {
     let{
       email,
       phone,
-      infoFirst,
-      infoSecond
+      info,
     } = this.props;
     return(
       <Card className='toggled-root'>
-        <Email
-          email={ email }
-          />
-        <Phone
-          phone={ phone }
-          />
-        <Info
-          infoFirst={ infoFirst }
-          infoSecond={ infoSecond }
-          />
+        
+        <div className='email'>
+          { email }
+        </div>
+        
+        <div className='phone'>
+          { phone }
+        </div>
+        
+        <div className='info'>
+          { info }
+        </div>
+        
       </Card>
     );
   }

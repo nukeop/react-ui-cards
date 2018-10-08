@@ -368,15 +368,31 @@ const demo = () => {
       <h2>Dropdown cards</h2>
       <div className='card-container'>
         <DropdownCard
-          name="Jan"
-          surname="Pawel II"
-          email="topkek"
-          phone="21371488"
-          infoFirst="k"
-          infoSecond="got it"
+          name="Justin"
+          surname="Case"
+          email="justin@case.com"
+          phone="123456789"
+          info="CEO"
+          messageOnPanel="Details"
           />
-      </div>
-      
+        <DropdownCard
+          name="Kira"
+          surname="Yoshikage"
+          email="kqueen@morioh.jp"
+          phone="324354657"
+          info="Asset manager"
+          messageOnPanel="Click here for more..."
+          />
+        <DropdownCard
+          name="Jan"
+          surname="Pawel 2"
+          email="jp2@vatican.com"
+          phone="21371488"
+          info="Pope"
+          messageOnPanel="Habemus papam"
+          />
+        
+      </div>      
     </div>
   );
 }
