@@ -18,7 +18,6 @@ class Arrow extends React.Component {
       onClick,
       position
     } = this.props;
-    console.log(position);
     return (
       <a onClick={onClick} className='toggle-root'>
         {
@@ -28,21 +27,6 @@ class Arrow extends React.Component {
         }
       </a>
     );
-    
-    // if(this.props.position === false){
-    //   return(
-    //     <a onClick={onClick} className='toggle-root'>
-    //       <ArrowDown/>
-    //     </a>
-    //   );
-    // }
-    // else{
-    //   return(
-    //     <a className='toggle-root'>
-    //       <ArrowUp/>
-    //     </a>
-    //   );
-    // }
   }
 }
 
