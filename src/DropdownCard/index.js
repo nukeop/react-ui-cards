@@ -42,14 +42,15 @@ class DropdownCard extends React.Component{
                 />
 
                 {
-                  this.state.arrowToggled === true  ?  <ToggledCard
+                  this.state.arrowToggled === true  ? <div className='togg'>
+                <ToggledCard
                 email={ email }
                 phone={ phone }
                 info={ info }
-                /> : <div className='message'>
+                /> </div>: <div className='message'>
                     { messageOnPanel }
                   </div>
-                };
+                }
                 
             </Card>
           );

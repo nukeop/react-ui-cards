@@ -15,7 +15,7 @@ class ToggledCard extends React.Component {
       info,
     } = this.props;
     return(
-      <Card className='toggled-root'>
+      <div className='toggled-root'>
         
         <div className='email'>
           { email }
@@ -29,7 +29,7 @@ class ToggledCard extends React.Component {
           { info }
         </div>
         
-      </Card>
+      </div>
     );
   }
 };
