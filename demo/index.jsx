@@ -373,7 +373,8 @@ const demo = () => {
           email="justin@case.com"
           phone="123456789"
           info="CEO"
-          messageOnPanel="Details"
+          messageOnToggled="Details"
+          messageOnUntoggled="Show less..."
           />
         <DropdownCard
           name="Kira"
@@ -381,7 +382,8 @@ const demo = () => {
           email="kqueen@morioh.jp"
           phone="324354657"
           info="Asset manager"
-          messageOnPanel="Click here for more..."
+          messageOnToggled="Click here for more..."
+          messageOnUntoggled="Untoggled"
           />
         <DropdownCard
           name="Jan"
@@ -389,7 +391,8 @@ const demo = () => {
           email="jp2@vatican.com"
           phone="21371488"
           info="Pope"
-          messageOnPanel="Habemus papam"
+          messageOnToggled="Habemus papam"
+          messageOnUntoggled="Cardinale Wojtyla"
           />
         
       </div>      
