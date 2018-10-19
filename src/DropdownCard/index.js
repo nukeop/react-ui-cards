@@ -28,7 +28,8 @@ class DropdownCard extends React.Component{
       email,
       phone,
       info,
-      messageOnPanel
+      messageOnToggled,
+      messageOnUntoggled
     } = this.props;
           return(
             <Card className='dropdown-card'>
@@ -36,21 +37,32 @@ class DropdownCard extends React.Component{
                 name={ name }
                 surname={ surname }
                 />
-              <Arrow
-                onClick={this.toggleArrow.bind(this)}
-                position={ this.state.arrowToggled }
-                />
 
+              <div className='toggling'>
                 {
-                  this.state.arrowToggled === true  ? <div className='togg'>
+                  this.state.arrowToggled === true  ? <React.Fragment>                 
+                  <button className='button'>
+                        <Arrow
+                            onClick={this.toggleArrow.bind(this)}
+                            position={ this.state.arrowToggled }
+                            message={ messageOnToggled }
+                            />
+    
+                    </button>
+
                 <ToggledCard
                 email={ email }
                 phone={ phone }
-                info={ info }
-                /> </div>: <div className='message'>
-                    { messageOnPanel }
-                  </div>
-                }
+                 info={ info } />
+                    </React.Fragment>   : <button className='button'>
+                    <Arrow
+                        onClick={this.toggleArrow.bind(this)}
+                        position={ this.state.arrowToggled }
+                        message={ messageOnUntoggled }
+                        />
+                    </button>
+              }
+              </div>
                 
             </Card>
           );

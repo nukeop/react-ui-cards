@@ -1,13 +1,19 @@
 .dropdown-card {
   display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  align-items: center;
   margin-bottom: 10rem;
 
-  .togg{
-    background-color: teal;
+
+
+  .button{
+    display: flex;
+    background-color: pink;
+    border-style: none;
     width: 100%;
-//    height: 5rem;
+    justify-content: space-evenly;
+    transition: 0.4s;
+    
+    &:hover{
+      transform: scale(0.9);
+    }
   }
 }
