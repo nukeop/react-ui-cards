@@ -10,7 +10,7 @@ class NameSurname extends React.Component {
     } = this.props;
 
     return(
-      <div className='root'>
+      <div className='NSroot'>
 
         <div className='name'>
           {name}
