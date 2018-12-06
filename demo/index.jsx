@@ -281,6 +281,7 @@ const demo = () => {
           title='Polish mountaineers on the top'
           author='Daily Sport'
           date='Feb 2, 2018'
+          tags={['nature', 'photo', () => (<i>component</i>)]}
         />
         <NewsHeaderCard
           href='https://github.com/nekonee'

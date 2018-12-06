@@ -113,6 +113,7 @@ Cards you can use on the news site, shows the title, author and date it was publ
 | thumbnail | string      | url to the image that will be displayed in the background |
 | author    | string      | author of aricle linked in href                           |
 | date      | string      | date of publishing                                        |
+| tags      | string      | optional. array of string to be rendered as tags          |
 
 ![News header card](https://i.imgur.com/3fZKPyS.png)
 
