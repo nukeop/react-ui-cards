@@ -7,7 +7,8 @@ class NewsHeader extends React.Component{
     let{
       title,
       author,
-      date
+      date,
+      tags
     } = this.props;
     return(
       <div className= 'news-header'>
@@ -24,8 +25,19 @@ class NewsHeader extends React.Component{
 	    <div className= 'date'>
 	      {date}
 	    </div>
-	    
-	</div>
+   </div>
+
+	    <div className='tags'>
+       {
+         tags && tags.map((tag, i) => {
+      return (
+        <span className='tag'>
+          {typeof tag === "function" ? tag() : tag}
+        </span>
+      );
+         })
+       }
+     </div>
 	
       </div>
     );
