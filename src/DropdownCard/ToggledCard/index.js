@@ -13,9 +13,12 @@ class ToggledCard extends React.Component {
       email,
       phone,
       info,
+      bgColor
     } = this.props;
     return(
-      <div className='toggled-root'>
+      <div className='toggled-root' style={{
+             backgroundColor : `rgba(${bgColor}, 0.25)`
+           }}>
         
         <div className='email'>
           { email }

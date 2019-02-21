@@ -29,40 +29,46 @@ class DropdownCard extends React.Component{
       phone,
       info,
       messageOnToggled,
-      messageOnUntoggled
+      messageOnUntoggled,
+      buttonColor,
+      bgColor
     } = this.props;
           return(
             <Card className='dropdown-card'>
               <NameSurname
                 name={ name }
                 surname={ surname }
+                bgColor={ bgColor }
                 />
 
-              <div className='toggling'>
                 {
                   this.state.arrowToggled === true  ? <React.Fragment>                 
-                  <button className='button'>
+                    <button className='button' style={{
+                              backgroundColor : buttonColor
+                              }}>
                         <Arrow
                             onClick={this.toggleArrow.bind(this)}
                             position={ this.state.arrowToggled }
-                            message={ messageOnToggled }
+                            message={ messageOnUntoggled }
                             />
-    
                     </button>
 
                 <ToggledCard
-                email={ email }
-                phone={ phone }
-                 info={ info } />
-                    </React.Fragment>   : <button className='button'>
+                    email={ email }
+                    phone={ phone }
+                    info={ info }
+                    bgColor={ bgColor }
+                    />
+                    </React.Fragment>   : <button className='button' style={{
+                                                    backgroundColor : buttonColor
+                                                    }}>
                     <Arrow
                         onClick={this.toggleArrow.bind(this)}
                         position={ this.state.arrowToggled }
-                        message={ messageOnUntoggled }
+                        message={ messageOnToggled }
                         />
                     </button>
               }
-              </div>
                 
             </Card>
           );
