@@ -375,6 +375,8 @@ const demo = () => {
           info="CEO"
           messageOnToggled="Details"
           messageOnUntoggled="Show less..."
+          buttonColor='pink'
+          bgColor='51, 204, 255'
           />
         <DropdownCard
           name="Kira"
@@ -383,16 +385,20 @@ const demo = () => {
           phone="324354657"
           info="Asset manager"
           messageOnToggled="Click here for more..."
-          messageOnUntoggled="Untoggled"
+          messageOnUntoggled="Click here to hide..."
+          buttonColor='cyan'
+          bgColor='0, 255, 204'
           />
         <DropdownCard
-          name="Jan"
-          surname="Pawel 2"
-          email="jp2@vatican.com"
+          name="Bobby"
+          surname="Choice"
+          email="bobby@choice.com"
           phone="21371488"
-          info="Pope"
-          messageOnToggled="Habemus papam"
-          messageOnUntoggled="Cardinale Wojtyla"
+          info="Jjoyman"
+          messageOnToggled="Click me!"
+          messageOnUntoggled="Hide me!"
+          buttonColor='rgb(51, 153, 255)'
+          bgColor='255, 128, 255'
           />
         
       </div>      
