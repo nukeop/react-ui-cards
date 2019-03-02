@@ -14,6 +14,7 @@ class NewsHeaderCard extends React.Component{
   render(){
     let{
       href,
+      onClick,
       title,
       author,
       date,
@@ -21,7 +22,7 @@ class NewsHeaderCard extends React.Component{
       tags
     } = this.props;
     return(
-      <a href={href}>
+      <a href={href} onClick={onClick}>
 	<Card className='news-header-card'>
 	  
 	   <NewsHeaderBackground
