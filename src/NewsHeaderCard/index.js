@@ -22,8 +22,8 @@ class NewsHeaderCard extends React.Component{
       tags
     } = this.props;
     return(
-      <a href={href}>
-	<Card className='news-header-card' onClick={onClick}>
+      <a href={href} onClick={onClick}>
+	<Card className='news-header-card'>
 	  
 	   <NewsHeaderBackground
 	      thumbnail={thumbnail}
