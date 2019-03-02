@@ -10,11 +10,10 @@ class Card extends React.Component {
   
   render() {
     let {
-      className,
-      onClick
+      className
     } = this.props;
     return (
-      <div className={classnames("card", className)} onClick={onClick}>
+      <div className={classnames("card", className)}>
 	{this.props.children}
       </div>
     );

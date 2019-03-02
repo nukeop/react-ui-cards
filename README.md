@@ -110,6 +110,7 @@ Cards you can use on the news site, shows the title, author and date it was publ
 | attribute | type        | description                                               |
 |-----------|-------------|-----------------------------------------------------------|
 | href      | string/null | optional url the card will link to when clicked           |
+| onClick   | function    | optional handler of user click                            |
 | thumbnail | string      | url to the image that will be displayed in the background |
 | author    | string      | author of aricle linked in href                           |
 | date      | string      | date of publishing                                        |
