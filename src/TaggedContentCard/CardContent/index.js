@@ -30,7 +30,7 @@ class CardContent extends React.Component {
 	      tags.map((tag, i) => {
 		return (
 		  <span className='tag'>
-		    {tag}
+		     {typeof tag === "function" ? tag() : tag}
 		  </span>
 		);
 	      })

@@ -15,23 +15,23 @@ class RecipeCardDesc extends React.Component{
     return(
       <div className= 'recipe-card-desc'>
 
-	<div className='title'>
-	  {title}
-	</div>
+	      <div className='title'>
+	        {title}
+	      </div>
 
-	<a className='heart' onClick={likeCallback}>
-	  <FontAwesome name='heart-o'/>
-	</a>
+	      <a className='heart' onClick={likeCallback}>
+	        <FontAwesome name='heart-o'/>
+	      </a>
 
-	<div className= 'time'>
-	    <FontAwesome name='hourglass-half'/>
-	    {time}
-	</div>
+	      <div className= 'time'>
+	        <FontAwesome name='hourglass-half'/>
+	        {time}
+	      </div>
 
-	    <div className= 'servings'>
-	    <FontAwesome name='user-o' />
-	  {servings}
-	</div>
+	      <div className= 'servings'>
+	        <FontAwesome name='user-o' />
+	        {servings}
+	      </div>
 
       </div>
       

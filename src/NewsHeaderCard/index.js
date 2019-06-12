@@ -17,7 +17,8 @@ class NewsHeaderCard extends React.Component{
       title,
       author,
       date,
-      thumbnail
+      thumbnail,
+      tags
     } = this.props;
     return(
       <a href={href}>
@@ -31,6 +32,7 @@ class NewsHeaderCard extends React.Component{
 	      title={title}
 	      author={author}
 	      date={date}
+        tags={tags}
 	      />
 	 </Card>
       </a> 

@@ -12,7 +12,8 @@ import {
   RecipeCard,
   NewsHeaderCard,
   CryptoCard,
-  PaymentCard
+  PaymentCard,
+  DropdownCard
 } from '../src';
 
 import './styles.scss';
@@ -282,6 +283,7 @@ const demo = () => {
           title='Polish mountaineers on the top'
           author='Daily Sport'
           date='Feb 2, 2018'
+          tags={['nature', 'photo', () => (<i>component</i>)]}
         />
         <NewsHeaderCard
           href='https://github.com/nekonee'
@@ -364,7 +366,44 @@ const demo = () => {
           cvv="880"
         />
       </div>
-
+      
+      <h2>Dropdown cards</h2>
+      <div className='card-container'>
+        <DropdownCard
+          name="Justin"
+          surname="Case"
+          email="justin@case.com"
+          phone="123456789"
+          info="CEO"
+          messageOnToggled="Details"
+          messageOnUntoggled="Show less..."
+          buttonColor='pink'
+          bgColor='51, 204, 255'
+          />
+        <DropdownCard
+          name="Kira"
+          surname="Yoshikage"
+          email="kqueen@morioh.jp"
+          phone="324354657"
+          info="Asset manager"
+          messageOnToggled="Click here for more..."
+          messageOnUntoggled="Click here to hide..."
+          buttonColor='cyan'
+          bgColor='0, 255, 204'
+          />
+        <DropdownCard
+          name="Bobby"
+          surname="Choice"
+          email="bobby@choice.com"
+          phone="21371488"
+          info="Jjoyman"
+          messageOnToggled="Click me!"
+          messageOnUntoggled="Hide me!"
+          buttonColor='rgb(51, 153, 255)'
+          bgColor='255, 128, 255'
+          />
+        
+      </div>      
     </div>
   );
 }

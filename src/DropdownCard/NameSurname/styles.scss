@@ -1,0 +1,11 @@
+.NSroot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  border-radius: 30px 5px 0 0;
+  
+  .name{
+      padding-right: 0.5rem;
+  }
+}
