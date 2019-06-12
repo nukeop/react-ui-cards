@@ -107,6 +107,7 @@ const demo = () => {
           price='$99'
           productName='Headphones'
           description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
+          buttonText='Add to cart'
           rating={3}
           url='https://github.com/nukeop'
         />

@@ -18,6 +18,7 @@ class ProductCard extends React.Component {
       price,
       productName,
       description,
+      buttonText,
       rating,
       url
     } = this.props;
@@ -35,6 +36,7 @@ class ProductCard extends React.Component {
         <ProductCardDescription
           productName={productName}
           description={description}
+          buttonText={buttonText}
           rating={rating}
           url={url}
         />
