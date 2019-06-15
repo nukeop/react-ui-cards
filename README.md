@@ -54,7 +54,10 @@ Cards representing products available for purchase.
 | productName | string  | name of the product                                           |
 | description | string  | a short description of the product                            |
 | rating      | integer | rating of the product (0-5). Not implemented yet.             |
-| url         | string  | url the 'buy now' button will link to                         |
+| url         | string  | url the button will link to                  
+  |
+| buttonText  | string/null | optional button text
+  |
 
 ![Product card](https://i.imgur.com/qDCMzwV.png)
 
