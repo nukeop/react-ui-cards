@@ -7,30 +7,29 @@ const ProductCardDescription = ({
   productName,
   description,
   buttonText,
-    rating,
-    url
+  rating,
+  url
 }) => {
+  const renderButton = () => {
+    if (buttonText) {
+      return (
+        <div className="row">
+          <a className="buy-button" href={url}>
+            {buttonText}
+          </a>
+        </div>
+      );
+    } else {
+      return null;
+    }
+  };
   return (
-    <div className='product-card-description-box'>
-      <div className='product-card-name'>
-	      {productName}
-	    </div>
-      <p className='product-card-description'>
-	      {description}
-	    </p>
-      <div className='row'>
-        <a className='buy-button' href={url}>{buttonText}</a>
-	    </div>
+    <div className="product-card-description-box">
+      <div className="product-card-name">{productName}</div>
+      <p className="product-card-description">{description}</p>
+      {renderButton()}
     </div>
   );
-};
-
-ProductCardDescription.propTypes = {
-
-};
-
-ProductCardDescription.defaultProps = {
-  buttonText: 'Buy now'
 };
 
 export default ProductCardDescription;
