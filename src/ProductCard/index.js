@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import Card from '../Card';
 import ProductCardDescription from './ProductCardDescription';
 import ProductCardGallery from './ProductCardGallery';
@@ -24,15 +24,9 @@ class ProductCard extends React.Component {
     } = this.props;
 
     return (
-      <Card
-        className='product-card'
-      >
-        <ProductCardGallery
-          photos={photos}
-        />
-        <PriceTag
-          price={price}
-        />
+      <Card className="product-card">
+        <ProductCardGallery photos={photos} />
+        <PriceTag price={price} />
         <ProductCardDescription
           productName={productName}
           description={description}
@@ -40,10 +34,18 @@ class ProductCard extends React.Component {
           rating={rating}
           url={url}
         />
-
       </Card>
     );
   }
 }
+
+ProductCard.propTypes = {
+  photos: PropTypes.arrayOf(PropTypes.string),
+  price: PropTypes.number,
+  productName: PropTypes.string,
+  description: PropTypes.string,
+  buttonText: PropTypes.string,
+  url: PropTypes.string
+};
 
 export default ProductCard;

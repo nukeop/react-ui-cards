@@ -47,14 +47,15 @@ Cards representing users or people.
 ### Product cards
 Cards representing products available for purchase.
 
-| attribute   | type    | description                                                   |
-|-------------|---------|---------------------------------------------------------------|
-| photos      | array   | array of urls to photos of the product                        |
-| price       | string  | the price that will be displayed in the upper lefthand corner |
-| productName | string  | name of the product                                           |
-| description | string  | a short description of the product                            |
-| rating      | integer | rating of the product (0-5). Not implemented yet.             |
-| url         | string  | url the 'buy now' button will link to                         |
+| attribute   | type    	| description                                                   |
+|-------------|-----------------|---------------------------------------------------------------|
+| photos      | array   	| array of urls to photos of the product                        |
+| price       | string  	| the price that will be displayed in the upper lefthand corner |
+| productName | string  	| name of the product                                           |
+| description | string  	| a short description of the product                            |
+| rating      | integer 	| rating of the product (0-5). Not implemented yet.             |
+| url         | string  	| url the button will link to                  			|
+| buttonText  | string/null     | optional button text				        	|
 
 ![Product card](https://i.imgur.com/qDCMzwV.png)
 
