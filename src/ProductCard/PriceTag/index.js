@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class PriceTag extends React.Component {
   constructor(props) {
@@ -13,8 +13,8 @@ class PriceTag extends React.Component {
     } = this.props;
 
     return (
-      <div className='price-tag'>
-	{price}
+      <div className={styles['price-tag']}>
+	      {price}
       </div>
     );
   }

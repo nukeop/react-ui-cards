@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class CardContent extends React.Component {
   render() {
@@ -12,31 +12,31 @@ class CardContent extends React.Component {
     } = this.props;
     return (
       <div
-	 className='card-content'
-	 >
-        <div className='thumbnail'>
-	  <img src={thumbnail} />
-	</div>
+	      className={styles['card-content']}
+	    >
+        <div className={styles['thumbnail']}>
+	        <img src={thumbnail} />
+	      </div>
 
-        <div className='text'>
-          <div className='title'>
-	    {title}
-	  </div>
-          <div className='description'>
-	    {description}
-	  </div>
-          <div className='tags'>
-	    {
-	      tags.map((tag, i) => {
-		return (
-		  <span className='tag'>
-		     {typeof tag === "function" ? tag() : tag}
-		  </span>
-		);
-	      })
-	    }
-	  </div>
-	</div>
+        <div className={styles['text']}>
+          <div className={styles['title']}>
+	          {title}
+	        </div>
+          <div className={styles['description']}>
+	          {description}
+	        </div>
+          <div className={styles['tags']}>
+	          {
+	            tags.map((tag, i) => {
+		            return (
+		              <span className={styles['tag']}>
+		                {typeof tag === "function" ? tag() : tag}
+		              </span>
+		            );
+	            })
+	          }
+	        </div>
+	      </div>
       </div>
     );
   }

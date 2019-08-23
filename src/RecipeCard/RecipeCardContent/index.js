@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class RecipeCardContent extends React.Component{
   render(){
@@ -8,13 +8,15 @@ class RecipeCardContent extends React.Component{
       thumbnail,
       href
     } = this.props;
+
     return(
-      <a href={href} className='recipe-card-content'>
-
-	<div className='thumbnail'>
-	  <div style={{backgroundImage: `url(${thumbnail})`}}/>
-	</div>
-
+      <a
+        href={href}
+        className={styles['recipe-card-content']}
+      >
+	      <div className={styles.thumbnail}>
+	        <div style={{backgroundImage: `url(${thumbnail})`}}/>
+	      </div>
       </a>
     );
   }

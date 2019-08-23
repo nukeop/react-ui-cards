@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 const ProductCardDescription = ({
   productName,
@@ -13,8 +13,8 @@ const ProductCardDescription = ({
   const renderButton = () => {
     if (buttonText) {
       return (
-        <div className="row">
-          <a className="buy-button" href={url}>
+        <div className={styles['row']}>
+          <a className={styles['buy-button']} href={url}>
             {buttonText}
           </a>
         </div>
@@ -24,9 +24,9 @@ const ProductCardDescription = ({
     }
   };
   return (
-    <div className="product-card-description-box">
-      <div className="product-card-name">{productName}</div>
-      <p className="product-card-description">{description}</p>
+    <div className={styles['product-card-description-box']}>
+      <div className={styles['product-card-name']}>{productName}</div>
+      <p className={styles['product-card-description']}>{description}</p>
       {renderButton()}
     </div>
   );

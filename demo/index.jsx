@@ -16,7 +16,7 @@ import {
   DropdownCard
 } from '../src';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 const render = Component => {
   ReactDOM.render(
@@ -34,17 +34,17 @@ const demo = () => {
         Links
       </h2>
 
-      <div className="links">
-        <a href="https://www.npmjs.com/package/react-ui-cards">npm</a> |
-        <a href="https://github.com/nukeop/react-ui-cards">Github</a>
+      <div className={styles.links}>
+        <a href='https://www.npmjs.com/package/react-ui-cards'>npm</a> |
+        <a href='https://github.com/nukeop/react-ui-cards'>Github</a>
       </div>
 
       <h2>
         User cards
       </h2>
-      <div className='card-container'>
+      <div className={styles['card-container']}>
         <UserCard
-          cardClass='float'
+          float
           header='https://i.imgur.com/w5tX1Pn.jpg'
           avatar='https://i.imgur.com/uDYejhJ.jpg'
           name='Justin Case'
@@ -65,7 +65,7 @@ const demo = () => {
           ]}
         />
         <UserCard
-          cardClass='float'
+          float
           href='https://github.com/nukeop'
           header='https://i.imgur.com/vRAtM3i.jpg'
           avatar='https://i.imgur.com/XJxqvsU.jpg'
@@ -73,7 +73,7 @@ const demo = () => {
           positionName='Software Engineering Manager'
         />
         <UserCard
-          cardClass='float'
+          float
           href='https://github.com/nukeop'
           header='https://i.imgur.com/p5yXGQk.jpg'
           avatar='https://i.imgur.com/kFkyYkZ.jpg'
@@ -98,7 +98,7 @@ const demo = () => {
       <h2>
         Product cards
       </h2>
-      <div className='card-container'>
+      <div className={styles['card-container']}>
         <ProductCard
           photos={[
             'https://i.imgur.com/jRVDeI8.jpg',
@@ -128,7 +128,7 @@ const demo = () => {
       <h2>
         Tagged content cards
       </h2>
-      <div className='card-container'>
+      <div className={styles['card-container']}>
         <TaggedContentCard
           href='https://github.com/nukeop'
           thumbnail='https://i.imgur.com/yCch7GN.jpg'
@@ -166,7 +166,7 @@ const demo = () => {
       <h2>
         Flipping cards
       </h2>
-      <div className='card-container'>
+      <div className={styles['card-container']}>
         <FlippingCard>
           <FlippingCardBack>
             <div
@@ -244,7 +244,7 @@ const demo = () => {
       <h2>
         Recipe Cards
       </h2>
-      <div className='card-container'>
+      <div className={styles['card-container']}>
         <RecipeCard
           href='https://github.com/nekonee'
           thumbnail='https://i.imgur.com/VkHTicg.jpg'
@@ -276,7 +276,7 @@ const demo = () => {
       <h2>
         News headers cards
       </h2>
-      <div className='card-container'>
+      <div className={styles['card-container']}>
         <NewsHeaderCard
           href='https://github.com/nekonee'
           thumbnail='https://i.imgur.com/rLFk5nd.jpg'
@@ -304,11 +304,11 @@ const demo = () => {
       <h2>
         Cryptocurrency cards
       </h2>
-      <div className='card-container' style={{background: 'linear-gradient(to top, #141e30, #243b55)', padding: '4rem 1rem'}}>
+      <div className={styles['card-container']} style={{background: 'linear-gradient(to top, #141e30, #243b55)', padding: '4rem 1rem'}}>
         <CryptoCard
           currencyName='Bitcoin'
           currencyPrice='$8850.32'
-          icon={<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/2000px-Bitcoin.svg.png"/>}
+          icon={<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/2000px-Bitcoin.svg.png'/>}
           currencyShortName='BTC'
           trend='(8.54%) $563.47'
           trendDirection={1}
@@ -318,7 +318,7 @@ const demo = () => {
         <CryptoCard
           currencyName='Ethereum'
           currencyPrice='$766.12'
-          icon={<img src="https://maxcdn.icons8.com/Share/icon/color/Logos/ethereum1600.png"/>}
+          icon={<img src='https://maxcdn.icons8.com/Share/icon/color/Logos/ethereum1600.png'/>}
           currencyShortName='ETH'
           trend='(7.32%) $14.94'
           trendDirection={1}
@@ -329,7 +329,7 @@ const demo = () => {
         <CryptoCard
           currencyName='Litecoin'
           currencyPrice='$137.92'
-          icon={<img src="http://icons.iconarchive.com/icons/blackvariant/button-ui-requests-6/1024/LiteCoin-icon.png"/>}
+          icon={<img src='http://icons.iconarchive.com/icons/blackvariant/button-ui-requests-6/1024/LiteCoin-icon.png'/>}
           currencyShortName='LTC'
           trend='(-5.12%) $6.34'
           trendDirection={-1}
@@ -339,66 +339,66 @@ const demo = () => {
       </div>
 
       <h2>Payment cards</h2>
-      <div className="card-container" style={{padding: '3rem 1rem 6rem'}}>
+      <div className={styles['card-container']} style={{padding: '3rem 1rem 6rem'}}>
         <PaymentCard
-          issuerIcon="https://i.imgur.com/MulWZzk.png"
-          backgroundPattern="spiral"
-          number="4445 8509 0753 1365"
-          date="12/18"
-          name="Jean Pierre Polnareff"
-          cvv="213"
+          issuerIcon='https://i.imgur.com/MulWZzk.png'
+          backgroundPattern='spiral'
+          number='4445 8509 0753 1365'
+          date='12/18'
+          name='Jean Pierre Polnareff'
+          cvv='213'
         />
         <PaymentCard
-          background="linear-gradient(135deg, #00b4db, #0083b0)"
-          issuerIcon="https://i.imgur.com/31vser1g.png"
-          number="5458 8074 7691 1254"
-          date="05/20"
-          name="Joseph Joestar"
-          cvv="714"
+          background='linear-gradient(135deg, #00b4db, #0083b0)'
+          issuerIcon='https://i.imgur.com/31vser1g.png'
+          number='5458 8074 7691 1254'
+          date='05/20'
+          name='Joseph Joestar'
+          cvv='714'
         />
         <PaymentCard
-          background="linear-gradient( 135deg, #11998e, #38ef7d)"
-          backgroundPattern="triangles"
-          issuerIcon="https://i.imgur.com/CRdoJbX.png"
-          number="3421 7270 0864 956"
-          date="02/22"
-          name="Jotaro Kujo"
-          cvv="880"
+          background='linear-gradient( 135deg, #11998e, #38ef7d)'
+          backgroundPattern='triangles'
+          issuerIcon='https://i.imgur.com/CRdoJbX.png'
+          number='3421 7270 0864 956'
+          date='02/22'
+          name='Jotaro Kujo'
+          cvv='880'
         />
       </div>
       
       <h2>Dropdown cards</h2>
-      <div className='card-container'>
+      <div className={styles['card-container']}>
         <DropdownCard
-          name="Justin"
-          surname="Case"
-          email="justin@case.com"
-          phone="123456789"
-          info="CEO"
-          messageOnToggled="Details"
-          messageOnUntoggled="Show less..."
+          name='Justin'
+          surname='Case'
+          email='justin@case.com'
+          phone='123456789'
+          info='CEO'
+          messageOnToggled='Details'
+          messageOnUntoggled='Show less...'
           buttonColor='pink'
           bgColor='51, 204, 255'
           />
         <DropdownCard
-          name="Kira"
-          surname="Yoshikage"
-          email="kqueen@morioh.jp"
-          phone="324354657"
-          info="Asset manager"
-          messageOnToggled="Click here for more..."
-          messageOnUntoggled="Click here to hide..."
+          name='Kira'
+          surname='Yoshikage'
+          email='kqueen@morioh.jp'
+          phone='324354657'
+          info='Asset manager'
+          messageOnToggled='Click here for more...'
+          messageOnUntoggled='Click here to hide...'
           buttonColor='cyan'
           bgColor='0, 255, 204'
           />
         <DropdownCard
-          name="Bobby"
-          surname="Choice"
-          email="bobby@choice.com"
-          phone="21371488"
-          info="Jjoyman"
-          messageOnToggled="Click me!"
-          messageOnUntoggled="Hide me!"
+          name='Bobby'
+          surname='Choice'
+          email='bobby@choice.com'
+          phone='21371488'
+          info='Jjoyman'
+          messageOnToggled='Click me!'
+          messageOnUntoggled='Hide me!'
           buttonColor='rgb(51, 153, 255)'
           bgColor='255, 128, 255'
           />

@@ -10,7 +10,8 @@
   right: 0;
   bottom: 0;
   background-color: black;
-
+  z-index: 1;
+  
   .overlay {
     position: absolute;
     top: 0;

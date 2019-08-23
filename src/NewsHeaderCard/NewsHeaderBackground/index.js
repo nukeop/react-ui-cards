@@ -1,20 +1,17 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class NewsHeaderBackground extends React.Component{
   render(){
-    let{
+    let {
       thumbnail
-    } =this.props;
+    } = this.props;
+    
     return(
-      <div className='news-header-background'>
-
-        <div className='overlay'>
-
-        </div>
-
-        <div className='thumbnail'>
+      <div className={styles['news-header-background']}>
+        <div className={styles['overlay']} />
+        <div className={styles['thumbnail']}>
           <div style ={{backgroundImage : `url(${thumbnail})`}}/>
         </div>
 

@@ -3,20 +3,16 @@
   margin-bottom: 10rem;
   min-height: 3rem;
   background-color: rgba(0, 0, 0, 0);
-
   
-  .button{
+  .button {
     display: flex;
     border-style: none;
     width: 100%;
     transition: .4s;
     
-    &:hover{
+    &:hover {
       transform: scale(1.1);
       border-radius: 50px;
     }
-
   } 
-  
-
 }

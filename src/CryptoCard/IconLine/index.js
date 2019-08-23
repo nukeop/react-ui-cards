@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import cx from 'classnames';
 
 import styles from './styles.scss';
 
@@ -13,21 +13,21 @@ const IconLine = props => {
   } = props;
 
   return (
-    <div className="crypto-card-icon-line">
-      <div className="left">
-        <div className="crypto-icon">
+    <div className={styles['crypto-card-icon-line']}>
+      <div className={styles.left}>
+        <div className={styles['crypto-icon']}>
           { icon }
         </div>
-        <div className="crypto-short-name">
+        <div className={styles['crypto-short-name']}>
           { currencyShortName }
         </div>
       </div>
-      <div className="right">
-        <div className={classnames(
-          'trend',
-          {'green': trendDirection > 0},
-          {'yellow': trendDirection === 0},
-          {'red': trendDirection < 0}
+      <div className={styles.right}>
+        <div className={cx(
+          styles.trend,
+          {[`${styles.green}`]: trendDirection > 0},
+          {[`${styles.yellow}`]: trendDirection === 0},
+          {[`${styles.red}`]: trendDirection < 0}
         )}>
         {trend}
         {' '}

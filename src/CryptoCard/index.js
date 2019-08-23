@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 
 import Card from '../Card';
 import TitleLine from './TitleLine';
 import IconLine from './IconLine';
 import CryptoChart from './CryptoChart';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class CryptoCard extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class CryptoCard extends React.Component {
 
   render() {
     let {
+      className,
       currencyName,
       currencyPrice,
       icon,
@@ -22,11 +24,16 @@ class CryptoCard extends React.Component {
       trend,
       trendDirection,
       chartColor,
-      chartData
+      chartData,
+      ...other
     } = this.props;
 
     return (
-      <Card className='crypto-card'>
+      <Card className={cx(
+        styles['crypto-card']
+      )}
+            {...other}
+        >
         <TitleLine
           currencyName={currencyName}
           currencyPrice={currencyPrice}

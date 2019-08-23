@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class UserCardBody extends React.Component {
   render() {
@@ -11,15 +11,15 @@ class UserCardBody extends React.Component {
     
     return (
       <div
-	className='user-card-body'
-	>
-        <div className='user-card-name'>
-	  {name}
-	</div>
-        <div className='user-card-position-name'>
-	  {positionName}
-	</div>
-	{this.props.children}
+	      className={styles['user-card-body']}
+	    >
+        <div className={styles['user-card-name']}>
+	        {name}
+	      </div>
+        <div className={styles['user-card-position-name']}>
+	        {positionName}
+	      </div>
+	      {this.props.children}
       </div>
     );
   }

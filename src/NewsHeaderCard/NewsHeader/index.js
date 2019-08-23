@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class NewsHeader extends React.Component{
   render(){
@@ -11,34 +11,34 @@ class NewsHeader extends React.Component{
       tags
     } = this.props;
     return(
-      <div className= 'news-header'>
-	
-	<div className= 'title'>
-	  {title}
-	</div>
+      <div className={styles['news-header']}>
+	      
+	      <div className={styles['title']}>
+	        {title}
+	      </div>
 
-	<div className='bottom'>
-	    <div className= 'author'>
-	      {author}
-	    </div>
+	      <div className={styles['bottom']}>
+	        <div className={styles['author']}>
+	          {author}
+	        </div>
 
-	    <div className= 'date'>
-	      {date}
-	    </div>
-   </div>
+	        <div className={styles['date']}>
+	          {date}
+	        </div>
+        </div>
 
-	    <div className='tags'>
-       {
-         tags && tags.map((tag, i) => {
-      return (
-        <span className='tag'>
-          {typeof tag === "function" ? tag() : tag}
-        </span>
-      );
-         })
-       }
-     </div>
-	
+	      <div className={styles['tags']}>
+          {
+            tags && tags.map((tag, i) => {
+              return (
+                <span className={styles['tag']}>
+                  {typeof tag === "function" ? tag() : tag}
+                </span>
+              );
+            })
+          }
+        </div>
+	      
       </div>
     );
   }

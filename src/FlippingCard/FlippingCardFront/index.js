@@ -1,21 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 const FlippingCardFront = props => {
   return (
-    <div className='front'>
+    <div className={styles['front']}>
       {props.children}
     </div>
   );
 }
 
 FlippingCardFront.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element
-  ])
+  children: PropTypes.node
 };
 
 export default FlippingCardFront;

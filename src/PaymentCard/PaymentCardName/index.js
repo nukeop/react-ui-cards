@@ -5,7 +5,7 @@ import styles from './styles.scss';
 
 const PaymentCardName = props => {
   return (
-    <div className="payment-card-name">
+    <div className={styles['payment-card-name']}>
       {props.name}
     </div>
   );

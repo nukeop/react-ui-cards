@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 
 import Card from '../Card';
 import FlippingCard from '../FlippingCard';
@@ -12,21 +13,28 @@ import Chip from './Chip';
 import PaymentCardDate from './PaymentCardDate';
 import PaymentCardName from './PaymentCardName';
 import PaymentCardBack from './PaymentCardBack';
-import './styles.scss';
+import styles from './styles.scss';
 
 const PaymentCard = props => {
   let {
+    className,
     background,
     backgroundPattern,
     issuerIcon,
     number,
     date,
     name,
-    cvv
+    cvv,
+    ...other
   } = props;
 
   return (
-    <FlippingCard className='payment-card'>
+    <FlippingCard
+      className={cx(
+        styles['payment-card']
+      )}
+    {...other}
+    >
       <FlippingCardFront>
         <PaymentCardBackground
           background={background}

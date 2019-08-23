@@ -30,7 +30,7 @@ class CryptoChart extends React.Component {
     };
 
     const dataFun = canvas => {
-      const ctx = canvas.getContext("2d");
+      const ctx = canvas.getContext('2d');
       const gradient = ctx.createLinearGradient(50, 0, 50, canvas.height*1.1);
       gradient.addColorStop(0, 'rgba(236, 240, 241, 0.1)');
       gradient.addColorStop(1, 'rgba(236, 240, 241, 0)');
@@ -43,7 +43,7 @@ class CryptoChart extends React.Component {
     };
 
     return (
-      <div className="crypto-chart">
+      <div className={styles['crypto-chart']}>
         <Line
           data={dataFun}
           options={config.options}

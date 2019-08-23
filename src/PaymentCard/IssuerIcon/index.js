@@ -5,10 +5,8 @@ import classnames from 'classnames';
 import styles from './styles.scss';
 
 const IssuerIcon = props => {
-
-
   return (
-    <div className="issuer-icon">
+    <div className={styles["issuer-icon"]}>
       {
         props.icon === undefined
         ? null

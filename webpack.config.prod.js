@@ -25,7 +25,7 @@ module.exports = {
         loader: 'style-loader!css-loader?modules=true&localIdentName=[name]__[local]___[hash:base64:5]'
       }, {
         test: /\.scss$/,
-        loader: 'style-loader!css-loader?importLoaders=1&modules&localIdentName=[local]!sass-loader'
+        loader: 'style-loader!css-loader?importLoaders=1&modules&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader'
       }, {
         test: /\.svg$/,
         loader: 'raw-loader'

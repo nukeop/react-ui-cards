@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class UserCardStats extends React.Component {
   constructor(props) {
@@ -14,22 +14,22 @@ class UserCardStats extends React.Component {
     
     return (
       <div
-	className='user-card-stats'
-	 >
-	{
-	  stats.map((stat, i) => {
-	    return (
-              <div className='stat-container'>
-		<div className='stat-value'>
-		  {stat.value}
-		</div>
-                <div className='stat-name'>
-		  {stat.name}
-		</div>
-	      </div>
-	    );
-	  })
-	}
+	      className={styles['user-card-stats']}
+	    >
+	      {
+	        stats.map((stat, i) => {
+	          return (
+              <div className={styles['stat-container']}>
+		            <div className={styles['stat-value']}>
+		              {stat.value}
+		            </div>
+                <div className={styles['stat-name']}>
+		              {stat.name}
+		            </div>
+	            </div>
+	          );
+	        })
+	      }
       </div>
     );
   }

@@ -1,11 +1,14 @@
 .news-header{
+  position: absolute;
   bottom: 0;
   flex-flow: row;
   color: #FAFAFA;
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
-
+  z-index: 2;
+  text-decoration: none;
+  
   div{
     display: flex;
     flex-flow: row;

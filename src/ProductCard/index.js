@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cx from 'classnames';
+
 import Card from '../Card';
 import ProductCardDescription from './ProductCardDescription';
 import ProductCardGallery from './ProductCardGallery';
 import PriceTag from './PriceTag';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class ProductCard extends React.Component {
   constructor(props) {
@@ -14,17 +16,25 @@ class ProductCard extends React.Component {
 
   render() {
     let {
+      className,
       photos,
       price,
       productName,
       description,
       buttonText,
       rating,
-      url
+      url,
+      ...other
     } = this.props;
 
     return (
-      <Card className="product-card">
+      <Card
+        className={cx(
+          styles['product-card'],
+          className
+        )}
+      {...other}
+      >
         <ProductCardGallery photos={photos} />
         <PriceTag price={price} />
         <ProductCardDescription

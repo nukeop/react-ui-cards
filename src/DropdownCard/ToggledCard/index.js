@@ -15,20 +15,21 @@ class ToggledCard extends React.Component {
       info,
       bgColor
     } = this.props;
+
     return(
-      <div className='toggled-root' style={{
-             backgroundColor : `rgba(${bgColor}, 0.25)`
-           }}>
+      <div className={styles['toggled-root']} style={{
+        backgroundColor : `rgba(${bgColor}, 0.25)`
+      }}>
         
-        <div className='email'>
+        <div className={styles.email}>
           { email }
         </div>
         
-        <div className='phone'>
+        <div className={styles.phone}>
           { phone }
         </div>
         
-        <div className='info'>
+        <div className={styles.info}>
           { info }
         </div>
         

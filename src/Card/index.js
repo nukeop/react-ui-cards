@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class Card extends React.Component {
   constructor(props) {
@@ -10,14 +11,32 @@ class Card extends React.Component {
   
   render() {
     let {
-      className
+      className,
+      float,
+      ...other
     } = this.props;
     return (
-      <div className={classnames("card", className)}>
-	{this.props.children}
+      <div
+        className={
+          classnames(
+            styles.card,
+            { [`${styles.float}`]: float },
+            className,
+          )}
+      { ...other }
+      >
+	      {this.props.children}
       </div>
     );
   }
 }
+
+Card.PropTypes = {
+  className: PropTypes.string
+};
+
+Card.defaultProps = {
+  className: ''
+};
 
 export default Card;

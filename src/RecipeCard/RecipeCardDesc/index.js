@@ -1,8 +1,7 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 
-import './styles.scss';
-
+import styles from './styles.scss';
 
 class RecipeCardDesc extends React.Component{
   render(){
@@ -12,23 +11,24 @@ class RecipeCardDesc extends React.Component{
       servings,
       likeCallback
     } = this.props;
+    
     return(
-      <div className= 'recipe-card-desc'>
+      <div className={styles['recipe-card-desc']}>
 
-	      <div className='title'>
+	      <div className={styles.title}>
 	        {title}
 	      </div>
 
-	      <a className='heart' onClick={likeCallback}>
+	      <a className={styles.heart} onClick={likeCallback}>
 	        <FontAwesome name='heart-o'/>
 	      </a>
 
-	      <div className= 'time'>
+	      <div className={styles.time}>
 	        <FontAwesome name='hourglass-half'/>
 	        {time}
 	      </div>
 
-	      <div className= 'servings'>
+	      <div className={styles.servings}>
 	        <FontAwesome name='user-o' />
 	        {servings}
 	      </div>

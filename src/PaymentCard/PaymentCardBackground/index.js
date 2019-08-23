@@ -13,7 +13,7 @@ const patterns = {
   spiral
 };
 
-const defaultBackground = "linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%)";
+const defaultBackground = 'linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%)';
 
 const PaymentCardBackground = props => {
   let {
@@ -22,11 +22,13 @@ const PaymentCardBackground = props => {
   } = props;
 
   let pattern = backgroundPattern===undefined
-  ? "worldMap" : backgroundPattern;
+  ? 'worldMap' : backgroundPattern;
 
   return (
-    <div className="payment-card-background" style={{background: background || defaultBackground}}>
-      <div className={classnames("svg-background", pattern)} dangerouslySetInnerHTML={{__html: patterns[pattern]}} />
+    <div className={styles['payment-card-background']} style={{background: background || defaultBackground}}>
+      <div className={
+        classnames(styles['svg-background'], styles[pattern])
+      } dangerouslySetInnerHTML={{__html: patterns[pattern]}} />
     </div>
   );
 }

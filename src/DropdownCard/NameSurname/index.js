@@ -11,15 +11,18 @@ class NameSurname extends React.Component {
     } = this.props;
 
     return(
-      <div className='NSroot' style={{
-             backgroundColor : `rgb(${ bgColor })`
-           }}>
+      <div
+        className={styles['NSroot']}
+        style={{
+          backgroundColor : `rgb(${ bgColor })`
+        }}
+      >
 
-        <div className='name'>
+        <div className={styles['name']}>
           {name}
         </div>
 
-        <div className='surname'>
+        <div className={styles['surname']}>
           {surname}
         </div>
         

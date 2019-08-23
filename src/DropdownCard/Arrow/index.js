@@ -7,7 +7,6 @@ import ArrowDown from './ArrowDown';
 
 import styles from './styles.scss';
 
-
 class Arrow extends React.Component {
   constructor(props){
     super(props);
@@ -19,8 +18,9 @@ class Arrow extends React.Component {
       position,
       message
     } = this.props;
+    
     return (
-      <a onClick={onClick} className='toggle-root'>
+      <a onClick={onClick} className={styles['toggle-root']}>
         {
           position === false
             ? <React.Fragment><ArrowDown /> { message }</React.Fragment>

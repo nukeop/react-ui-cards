@@ -5,9 +5,9 @@ import styles from './styles.scss';
 
 const PaymentCardDate = props => {
   return (
-    <div className='payment-card-date'>
-      <div className="valid-date">Valid dates</div>
-      <div className="to-date">{props.date}</div>
+    <div className={styles['payment-card-date']}>
+      <div className={styles['valid-date']}>Valid dates</div>
+      <div className={styles['to-date']}>{props.date}</div>
     </div>
   );
 }

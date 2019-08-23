@@ -1,19 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styles from './styles.scss';
 
 const Chip = props => {
   return (
-    <div className="chip-container">
-      <span className='chip' />
+    <div className={styles["chip-container"]}>
+      <span className={styles['chip']} />
     </div>
 
   );
-}
-
-Chip.propTypes = {
-
 };
 
 export default Chip;

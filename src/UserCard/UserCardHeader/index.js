@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class UserCardHeader extends React.Component {
   render() {
@@ -10,9 +10,9 @@ class UserCardHeader extends React.Component {
     
     return (
       <div
-	className='user-card-header'
-	style={{backgroundImage: `url(${src})`}}
-	>
+	      className={styles['user-card-header']}
+	      style={{backgroundImage: `url(${src})`}}
+	    >
       </div>
     );
   }

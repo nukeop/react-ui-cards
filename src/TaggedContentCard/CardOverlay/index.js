@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class CardOverlay extends React.Component {
   render() {
@@ -9,14 +9,14 @@ class CardOverlay extends React.Component {
     } = this.props;
     return (
       <div
-	 className='card-overlay'
-	 >
+	      className={styles['card-overlay']}
+	    >
         <div
-	   className='overlay'
-	   style={{
-	     backgroundImage: `url(${thumbnail})`
-	   }}
-	   />
+	        className={styles['overlay']}
+	        style={{
+	          backgroundImage: `url(${thumbnail})`
+	        }}
+	      />
       </div>
     );
   }

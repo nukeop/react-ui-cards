@@ -5,10 +5,10 @@ import styles from './styles.scss';
 
 const PaymentCardBack = props => {
   return (
-    <div className="payment-card-back">
-      <span className="magnetic-stripe" />
-      <div className="signature-field">
-        <span className="cvv">{props.cvv}</span>
+    <div className={styles['payment-card-back']}>
+      <span className={styles['magnetic-stripe']} />
+      <div className={styles['signature-field']}>
+        <span className={styles.cvv}>{props.cvv}</span>
       </div>
     </div>
   );

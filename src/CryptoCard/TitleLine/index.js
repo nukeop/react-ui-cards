@@ -10,9 +10,9 @@ const TitleLine = props => {
   } = props;
 
   return (
-    <div className="crypto-card-title-line">
-      <div className="currency-name">{ currencyName }</div>
-      <div className="currency-price">{ currencyPrice }</div>
+    <div className={styles['crypto-card-title-line']}>
+      <div className={styles['currency-name']}>{ currencyName }</div>
+      <div className={styles['currency-price']}>{ currencyPrice }</div>
     </div>
   );
 }

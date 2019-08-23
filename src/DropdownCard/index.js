@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 
 import Card from '../Card';
 import NameSurname from './NameSurname';
@@ -23,6 +24,7 @@ class DropdownCard extends React.Component{
   
   render(){
     let{
+      className,
       name,
       surname,
       email,
@@ -31,47 +33,62 @@ class DropdownCard extends React.Component{
       messageOnToggled,
       messageOnUntoggled,
       buttonColor,
-      bgColor
+      bgColor,
+      ...other
     } = this.props;
-          return(
-            <Card className='dropdown-card'>
-              <NameSurname
-                name={ name }
-                surname={ surname }
-                bgColor={ bgColor }
-                />
+    
+    return(
+      <Card
+        className={cx(
+          styles['dropdown-card']
+        )}
+        {...other}
+      >
+        <NameSurname
+          name={ name }
+          surname={ surname }
+          bgColor={ bgColor }
+        />
 
-                {
-                  this.state.arrowToggled === true  ? <React.Fragment>                 
-                    <button className='button' style={{
-                              backgroundColor : buttonColor
-                              }}>
-                        <Arrow
-                            onClick={this.toggleArrow.bind(this)}
-                            position={ this.state.arrowToggled }
-                            message={ messageOnUntoggled }
-                            />
-                    </button>
+        {
+          this.state.arrowToggled === true
+            ? <React.Fragment>                 
+                <button
+                  className={styles.button}
+                  style={{
+                    backgroundColor : buttonColor
+                  }}
+                >
+                  <Arrow
+                    onClick={this.toggleArrow.bind(this)}
+                    position={ this.state.arrowToggled }
+                    message={ messageOnUntoggled }
+                  />
+                </button>
 
                 <ToggledCard
-                    email={ email }
-                    phone={ phone }
-                    info={ info }
-                    bgColor={ bgColor }
-                    />
-                    </React.Fragment>   : <button className='button' style={{
-                                                    backgroundColor : buttonColor
-                                                    }}>
-                    <Arrow
-                        onClick={this.toggleArrow.bind(this)}
-                        position={ this.state.arrowToggled }
-                        message={ messageOnToggled }
-                        />
-                    </button>
-              }
-                
-            </Card>
-          );
-    }
+                  email={ email }
+                  phone={ phone }
+                  info={ info }
+                  bgColor={ bgColor }
+                />
+              </React.Fragment>
+          : <button
+                                          className={styles.button}
+                            style={{
+                              backgroundColor : buttonColor
+                            }}
+               >
+                 <Arrow
+                   onClick={this.toggleArrow.bind(this)}
+                   position={ this.state.arrowToggled }
+                   message={ messageOnToggled }
+                 />
+               </button>
+        }
+        
+      </Card>
+    );
   }
+}
 export default DropdownCard;

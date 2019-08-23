@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class UserCardAvatar extends React.Component {
   render() {
@@ -10,11 +10,9 @@ class UserCardAvatar extends React.Component {
     
     return (
       <div
-	className='user-card-avatar'
-	style={{backgroundImage: `url(${src})`}}
-	>
-	
-      </div>
+	      className={styles['user-card-avatar']}
+	      style={{backgroundImage: `url(${src})`}}
+	    />
     );
   }
 }

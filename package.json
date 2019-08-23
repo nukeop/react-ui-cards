@@ -22,12 +22,12 @@
   "author": "nukeop",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "ava": "^0.25.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "babel-loader": "^8.0.6",
     "classnames": "^2.2.6",
     "css-loader": "^1.0.0",
     "node-sass": "^4.9.0",
@@ -35,9 +35,9 @@
     "react-hot-loader": "^4.3.3",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.23.0",
-    "webpack": "^4.12.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
     "chart.js": "^2.7.2",

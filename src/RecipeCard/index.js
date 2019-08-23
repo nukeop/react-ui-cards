@@ -1,10 +1,11 @@
 import React from 'react';
+import cx from 'classnames';
 
 import Card from '../Card';
 import RecipeCardContent from './RecipeCardContent';
 import RecipeCardDesc from './RecipeCardDesc';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class RecipeCard extends React.Component{
   constructor(props){
@@ -12,29 +13,31 @@ class RecipeCard extends React.Component{
   }
 
   render(){
-    let{
+    let {
+      className,
       href,
       likeCallback,
       thumbnail,
       title,
       time,
-      servings
+      servings,
+      ...other
     } = this.props;
     return(
-      <Card className='recipe-card'>
-	
-	<RecipeCardContent
-	  href={href}
-	  thumbnail={thumbnail}
-	  />
+      <Card className={styles['recipe-card']}>
+	      
+	      <RecipeCardContent
+	        href={href}
+	        thumbnail={thumbnail}
+	      />
 
-	<RecipeCardDesc
-	  title={title}
-	  time={time}
-	  servings={servings}
-	  likeCallback={likeCallback}
-	  />
-	
+	      <RecipeCardDesc
+	        title={title}
+	        time={time}
+	        servings={servings}
+	        likeCallback={likeCallback}
+	      />
+	      
       </Card>
     );
   }

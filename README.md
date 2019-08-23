@@ -29,18 +29,23 @@ $ npm run dev
 All contributions are welcome. You can either add something to existing cards, or create a completely new card type.
 
 ## Card types
+In addition to what's listed for each card type, all cards can take the following additional props:
+
+- `className` to apply additional classes to the card
+- `float` (boolean) to enable animation on hover
+- Other props are passed down to the enclosing div element so you can e.g. add custom callbacks for onClick and other events.
+
 ### User cards
 Cards representing users or people.
 
-| attribute    | type        | description                                                                                                         |
-|--------------|-------------|---------------------------------------------------------------------------------------------------------------------|
-| cardClass    | string      | additional CSS classes you might want to apply to the Card. Putting 'float' here will enable an on-hover animation. |
-| href         | string/null | optional url the card will link to when clicked                                                                     |
-| header       | string      | url to the image that will be displayed in the upper part of the card                                               |
-| avatar       | string      | url to the image that will be displayed in the center of the card                                                   |
-| name         | string      | user's name                                                                                                         |
-| positionName | string      | user's role                                                                                                         |
-| stats        | array/null  | an optional array of objects with attributes 'name' and 'value' - this is displyed in the card's footer             |
+| attribute    | type        | description                                                                                             |
+|--------------|-------------|---------------------------------------------------------------------------------------------------------|
+| href         | string/null | optional url the card will link to when clicked                                                         |
+| header       | string      | url to the image that will be displayed in the upper part of the card                                   |
+| avatar       | string      | url to the image that will be displayed in the center of the card                                       |
+| name         | string      | user's name                                                                                             |
+| positionName | string      | user's role                                                                                             |
+| stats        | array/null  | an optional array of objects with attributes 'name' and 'value' - this is displyed in the card's footer |
 
 ![User card](https://i.imgur.com/2QMNcjY.png)
 

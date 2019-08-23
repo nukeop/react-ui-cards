@@ -1,23 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import cx from 'classnames';
 
 import Card from '../Card';
 import FlippingCardBack from './FlippingCardBack';
 import FlippingCardFront from './FlippingCardFront';
-import './styles.scss';
+import styles from './styles.scss';
 
 const FlippingCard = props => {
   let {
     children,
-    className
+    className,
+    ...other
   } = props;
 
   return (
     <Card
-      className={classnames('flipping-card-container', className)}
+      className={cx(
+        styles['flipping-card-container'],
+        className
+      )}
+    {...other}
     >
-      <div className='flipping-card'>
+      <div className={styles['flipping-card']}>
         {children}
       </div>
     </Card>
@@ -25,10 +30,7 @@ const FlippingCard = props => {
 }
 
 FlippingCard.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element
-  ]),
+  children: PropTypes.node,
   className: PropTypes.string
 };
 

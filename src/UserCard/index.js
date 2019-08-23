@@ -6,7 +6,7 @@ import UserCardAvatar from './UserCardAvatar';
 import UserCardBody from './UserCardBody';
 import UserCardStats from './UserCardStats';
 
-import './styles.scss';
+import styles from './styles.scss';
 
 class UserCard extends React.Component {
   constructor(props) {
@@ -15,42 +15,44 @@ class UserCard extends React.Component {
   
   render() {
     let {
+      className,
       href,
       header,
       avatar,
       name,
       positionName,
       stats,
-      cardClass
+      ...other
     } = this.props;
     
     return (
-      <a className='card-link' href={href}>
-	<Card
-	   className={cardClass}
-	   >
-	  <UserCardHeader
-	     src={header}
-	     />
-	  <UserCardAvatar
-	     src={avatar}
-	     />
-	  <UserCardBody
-	     name={name}
-	     positionName={positionName}
-	     >
-	    {this.props.children}
-	  </UserCardBody>
+      <a className={styles['card-link']} href={href}>
+	      <Card
+          className={className}
+          {...other}
+	      >
+	        <UserCardHeader
+	          src={header}
+	        />
+	        <UserCardAvatar
+	          src={avatar}
+	        />
+	        <UserCardBody
+	          name={name}
+	          positionName={positionName}
+	        >
+	          {this.props.children}
+	        </UserCardBody>
 
-	  {
-	    stats !== undefined
-	      ? <UserCardStats
-		     stats={stats}
-		     />
-	      : null
-	  }
-	  
-	</Card>
+	        {
+	          stats !== undefined
+	            ? <UserCardStats
+		      stats={stats}
+		                      />
+	          : null
+	        }
+	        
+	      </Card>
       </a>
     );
   }
