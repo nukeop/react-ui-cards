@@ -45,7 +45,7 @@ Cards representing users or people.
 | avatar       | string      | url to the image that will be displayed in the center of the card                                       |
 | name         | string      | user's name                                                                                             |
 | positionName | string      | user's role                                                                                             |
-| stats        | array/null  | an optional array of objects with attributes 'name' and 'value' - this is displyed in the card's footer |
+| stats        | array/null  | an optional array of objects with attributes 'name' and 'value' - this is displayed in the card's footer |
 
 ![User card](https://i.imgur.com/2QMNcjY.png)
 
