@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import styles from './styles.scss';
+import styles from './styles.module.scss';
 
 class Card extends React.Component {
   constructor(props) {

@@ -4,10 +4,12 @@
   "description": "Various card components for React",
   "main": "index.js",
   "scripts": {
-    "test": "ava",
-    "prepublishOnly": "webpack -p --progress --colors --config webpack.config.publish.js",
-    "demo": "webpack -p --progress --colors --env=prod",
-    "dev": "webpack-dev-server --inline --env=dev"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -21,29 +23,64 @@
   ],
   "author": "nukeop",
   "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "ava": "^0.25.0",
-    "babel-loader": "^8.0.6",
-    "classnames": "^2.2.6",
-    "css-loader": "^1.0.0",
-    "node-sass": "^4.9.0",
-    "raw-loader": "^0.5.1",
-    "react-hot-loader": "^4.3.3",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.23.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
-  },
   "dependencies": {
+    "@storybook/preset-scss": "^1.0.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "chart.js": "^2.7.2",
-    "react": "^16.4.1",
+    "classnames": "^2.2.6",
+    "css-loader": "^5.2.7",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
     "react-chartjs-2": "^2.7.2",
-    "react-dom": "^16.4.1",
-    "react-fontawesome": "^1.6.1"
+    "react-dom": "^17.0.2",
+    "react-fontawesome": "^1.6.1",
+    "react-scripts": "4.0.3",
+    "sass-loader": "^10.2.0",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1",
+    "webpack": "^4.46.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.0-beta.23",
+    "@storybook/addon-essentials": "^6.4.0-beta.23",
+    "@storybook/addon-links": "^6.4.0-beta.23",
+    "@storybook/node-logger": "^6.4.0-beta.23",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.4.0-beta.23"
   }
 }
