@@ -1,0 +1,399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Cards/Base Card Custom Class 1`] = `
+Array [
+  <style>
+    
+        .custom-card {
+            background-color: #faebd7;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+    
+  </style>,
+  <div
+    className="card card custom-card"
+  >
+    Card with custom className
+  </div>,
+]
+`;
+
+exports[`Storyshots Cards/Base Card Example 1 1`] = `
+<div
+  className="card card"
+>
+  Card content
+</div>
+`;
+
+exports[`Storyshots Cards/Base Card Floating Card 1`] = `
+<div
+  className="card card float"
+>
+  Hover over me
+</div>
+`;
+
+exports[`Storyshots Cards/Product card Example 1 1`] = `
+<div
+  className="card card product-card"
+  rating={3}
+>
+  <div
+    className="product-card-gallery"
+  >
+    <div
+      className="gallery-item active"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/jRVDeI8.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/raPe27t.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/IpEsYSH.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-toggle right"
+      onClick={[Function]}
+    >
+      &gt;
+    </div>
+    <div
+      className="gallery-toggle left"
+      onClick={[Function]}
+    >
+      &lt;
+    </div>
+  </div>
+  <div
+    className="price-tag"
+  >
+    $99
+  </div>
+  <div
+    className="product-card-description-box"
+  >
+    <div
+      className="product-card-name"
+    >
+      Headphones
+    </div>
+    <p
+      className="product-card-description"
+    >
+      Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.
+    </p>
+    <div
+      className="row"
+    >
+      <a
+        className="buy-button"
+        href="https://github.com/nukeop"
+      >
+        Add to cart
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Product card Example 2 1`] = `
+<div
+  className="card card product-card"
+  rating={5}
+>
+  <div
+    className="product-card-gallery"
+  >
+    <div
+      className="gallery-item active"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/t7DTziH.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/kA5lx6t.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/cUsl6Gs.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-toggle right"
+      onClick={[Function]}
+    >
+      &gt;
+    </div>
+    <div
+      className="gallery-toggle left"
+      onClick={[Function]}
+    >
+      &lt;
+    </div>
+  </div>
+  <div
+    className="price-tag"
+  >
+    $1.50
+  </div>
+  <div
+    className="product-card-description-box"
+  >
+    <div
+      className="product-card-name"
+    >
+      Cupcake
+    </div>
+    <p
+      className="product-card-description"
+    >
+      Nullam velit leo, pulvinar non metus feugiat, pharetra ornare enim. Vivamus ac quam a purus venenatis fringilla.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/User Card Example 1 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card float"
+  >
+    <div
+      className="user-card-header"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/w5tX1Pn.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/uDYejhJ.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-body"
+    >
+      <div
+        className="user-card-name"
+      >
+        Justin Case
+      </div>
+      <div
+        className="user-card-position-name"
+      >
+        Software Developer
+      </div>
+    </div>
+    <div
+      className="user-card-stats"
+    >
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          21
+        </div>
+        <div
+          className="stat-name"
+        >
+          followers
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          37
+        </div>
+        <div
+          className="stat-name"
+        >
+          following
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          117
+        </div>
+        <div
+          className="stat-name"
+        >
+          posts
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/User Card Example 2 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card float"
+  >
+    <div
+      className="user-card-header"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/vRAtM3i.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/XJxqvsU.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-body"
+    >
+      <div
+        className="user-card-name"
+      >
+        Frank Hepsfield
+      </div>
+      <div
+        className="user-card-position-name"
+      >
+        Software Engineering Manager
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/User Card Example 3 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card float"
+  >
+    <div
+      className="user-card-header"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/p5yXGQk.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/kFkyYkZ.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-body"
+    >
+      <div
+        className="user-card-name"
+      >
+        Joseph Cheps
+      </div>
+      <div
+        className="user-card-position-name"
+      >
+        Firmware Engineer
+      </div>
+    </div>
+    <div
+      className="user-card-stats"
+    >
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          365
+        </div>
+        <div
+          className="stat-name"
+        >
+          commits
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          110
+        </div>
+        <div
+          className="stat-name"
+        >
+          stars
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          54
+        </div>
+        <div
+          className="stat-name"
+        >
+          repositories
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;

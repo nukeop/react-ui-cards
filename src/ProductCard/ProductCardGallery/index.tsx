@@ -28,6 +28,7 @@ const ProductCardGallery: React.FC<ProductCardGalleryProps> = ({ photos }) => {
       {
         photos.map((photo, i) => (
           <div
+            key={photo}
             className={cx(
               styles['gallery-item'],
               { [`${styles['active']}`]: activeItem === i }
