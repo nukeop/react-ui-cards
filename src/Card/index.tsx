@@ -1,42 +1,29 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import styles from './styles.module.scss';
 
-class Card extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  
-  render() {
-    let {
-      className,
-      float,
-      ...other
-    } = this.props;
-    return (
-      <div
-        className={
-          classnames(
-            styles.card,
-            { [`${styles.float}`]: float },
-            className,
-          )}
-      { ...other }
-      >
-	      {this.props.children}
-      </div>
-    );
-  }
-}
-
-Card.PropTypes = {
-  className: PropTypes.string
+export type CardProps = {
+  className?: string;
+  float?: boolean;
 };
 
-Card.defaultProps = {
-  className: ''
+const Card: React.FC<CardProps> = ({
+  className,
+  float,
+  children,
+  ...rest
+}) => {
+
+  return <div className={
+    classnames(styles.card, styles.card,
+      { [styles.float]: float },
+      className)
+  }
+    {...rest}
+  >
+    {children}
+  </div>;
 };
 
 export default Card;

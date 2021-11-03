@@ -1,24 +1,20 @@
-import React, { Children } from 'react';
+import React from 'react';
 
-import Card from '../Card';
-import UserCardHeader from './UserCardHeader';
-import UserCardAvatar from './UserCardAvatar';
-import UserCardBody from './UserCardBody';
-import UserCardStats from './UserCardStats';
+import Card, { CardProps } from '../Card';
+import UserCardHeader, { UserCardHeaderProps } from './UserCardHeader';
+import UserCardAvatar, { UserCardAvatarProps } from './UserCardAvatar';
+import UserCardBody, { UserCardBodyProps } from './UserCardBody';
+import UserCardStats, { UserCardStatsProps } from './UserCardStats';
 
 import styles from './styles.module.scss';
 
-export type UserCardProps = {
-	className?: string;
+export type UserCardProps = CardProps & {
 	href: string;
-	header: string;
-	avatar: string;
-	name: string;
-	positionName: string;
-	stats: {
-		name: string;
-		value: number | string;
-	}[];
+	header: UserCardHeaderProps['src'];
+	avatar: UserCardAvatarProps['src'];
+	name: UserCardBodyProps['name'];
+	positionName: UserCardBodyProps['positionName'];
+	stats?: UserCardStatsProps['stats'];
 };
 
 const UserCard: React.FC<UserCardProps> = ({
@@ -31,8 +27,14 @@ const UserCard: React.FC<UserCardProps> = ({
 	stats,
 	children,
 	...rest
-}) => <a className={styles['card-link']} href={href}>
-		<Card className={className}>
+}) => <a
+	className={styles['card-link']}
+	href={href}
+>
+		<Card
+			className={className}
+			{...rest}
+		>
 			<UserCardHeader
 				src={header}
 			/>

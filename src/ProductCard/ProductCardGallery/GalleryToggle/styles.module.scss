@@ -12,6 +12,16 @@
   opacity: 0;
   cursor: pointer;
 
+  &.left {
+    left: 0;
+    border-radius: 0.25rem 0 0 0;
+  }
+
+  &.right {
+    right: 0;
+    border-radius: 0 0.25rem 0 0;
+  }
+
   &:hover {
     opacity: 1;
   }
