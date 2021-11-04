@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 import {
-  TaggedContentCard,
   RecipeCard,
   NewsHeaderCard,
-  PaymentCard
 } from '../src';
 
 import styles from './styles.scss';
@@ -30,44 +28,6 @@ const demo = () => {
       <div className={styles.links}>
         <a href='https://www.npmjs.com/package/react-ui-cards'>npm</a> |
         <a href='https://github.com/nukeop/react-ui-cards'>Github</a>
-      </div>
-      <h2>
-        Tagged content cards
-      </h2>
-      <div className={styles['card-container']}>
-        <TaggedContentCard
-          href='https://github.com/nukeop'
-          thumbnail='https://i.imgur.com/yCch7GN.jpg'
-          title='Cheesecake'
-          description='a cake with raspberries'
-          tags={[
-            'food',
-            'cake',
-            'fruits'
-          ]}
-        />
-        <TaggedContentCard
-          href='https://github.com/nukeop'
-          thumbnail='https://i.imgur.com/57I3RAq.jpg'
-          title='Cupcakes'
-          description='a bite-sized cake'
-          tags={[
-            'food',
-            'cake',
-            'icing'
-          ]}
-        />
-        <TaggedContentCard
-          href='https://github.com/nukeop'
-          thumbnail='https://i.imgur.com/H0f0R6p.jpg'
-          title='Burger'
-          description='the cornerstone of every nutritious breakfast'
-          tags={[
-            'food',
-            'sandwich',
-            'meat'
-          ]}
-        />
       </div>
 
       <h2>
