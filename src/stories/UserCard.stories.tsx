@@ -1,7 +1,7 @@
 import UserCard from "../UserCard";
 
 export default {
-    title: 'Cards/User Card',
+    title: 'Cards/User card',
     component: UserCard
 }
 

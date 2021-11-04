@@ -1,4 +1,5 @@
-module.exports = {
+/* eslint-disable import/no-anonymous-default-export */
+export default {
   datasets: {
     borderColor: 'rgba(241, 196, 15, 1)',
     borderCapStyle: 'round',

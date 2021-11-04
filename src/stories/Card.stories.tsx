@@ -1,7 +1,7 @@
 import Card from "../Card"
 
 export default {
-    title: 'Cards/Base Card'
+    title: 'Cards/Base card'
 };
 
 export const Example1 = () => <Card>
