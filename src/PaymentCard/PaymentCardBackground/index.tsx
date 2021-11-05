@@ -25,7 +25,7 @@ const PaymentCardBackground: React.FC<PaymentCardBackgroundProps> = ({
 }) => {
   let pattern = backgroundPattern === undefined
     ? 'worldMap' : backgroundPattern;
-  console.log({ patterns })
+    
   return (
     <div className={styles['payment-card-background']}
       style={{ background: background || defaultBackground }}>

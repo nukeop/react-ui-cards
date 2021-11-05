@@ -9,19 +9,6 @@ import RecipeCard from './RecipeCard';
 import NewsHeaderCard from './NewsHeaderCard';
 import CryptoCard from './CryptoCard';
 
-export default {
-  UserCard,
-  ProductCard,
-  TaggedContentCard,
-  FlippingCard,
-  FlippingCardFront,
-  FlippingCardBack,
-  PaymentCard,
-  RecipeCard,
-  NewsHeaderCard,
-  CryptoCard,
-};
-
 export {
   UserCard,
   ProductCard,

@@ -34,7 +34,7 @@ const NewsHeader: React.FC<NewsHeaderProps> = ({
     <div className={styles['tags']}>
       {tags && tags.map((tag, i) => {
         return (
-          <span className={styles['tag']}>
+          <span key={i} className={styles['tag']}>
             {typeof tag === "function" ? tag() : tag}
           </span>
         );
