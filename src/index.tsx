@@ -1,16 +1,36 @@
-/* eslint-disable import/no-anonymous-default-export */
-import Card from "./Card";
-import ProductCard from "./ProductCard";
-import UserCard from "./UserCard";
+import UserCard from './UserCard';
+import ProductCard from './ProductCard';
+import TaggedContentCard from './TaggedContentCard';
+import FlippingCard from './FlippingCard';
+import FlippingCardFront from './FlippingCard/FlippingCardFront';
+import FlippingCardBack from './FlippingCard/FlippingCardBack';
+import PaymentCard from './PaymentCard';
+import RecipeCard from './RecipeCard';
+import NewsHeaderCard from './NewsHeaderCard';
+import CryptoCard from './CryptoCard';
 
 export default {
-    Card,
-    UserCard,
-    ProductCard
+  UserCard,
+  ProductCard,
+  TaggedContentCard,
+  FlippingCard,
+  FlippingCardFront,
+  FlippingCardBack,
+  PaymentCard,
+  RecipeCard,
+  NewsHeaderCard,
+  CryptoCard,
 };
 
 export {
-    Card,
-    UserCard,
-    ProductCard
+  UserCard,
+  ProductCard,
+  TaggedContentCard,
+  FlippingCard,
+  FlippingCardFront,
+  FlippingCardBack,
+  PaymentCard,
+  RecipeCard,
+  NewsHeaderCard,
+  CryptoCard,
 };

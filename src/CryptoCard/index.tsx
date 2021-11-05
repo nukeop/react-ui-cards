@@ -33,7 +33,8 @@ const CryptoCard: React.FC<CryptoCardProps> = ({
   ...rest
 }) => (
   <Card className={cx(
-    styles['crypto-card']
+    styles['crypto-card'],
+    className
   )}
     {...rest}
   >

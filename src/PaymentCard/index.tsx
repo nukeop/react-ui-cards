@@ -37,7 +37,8 @@ const PaymentCard: React.FC<PaymentCardProps> = ({
 }) => (
   <FlippingCard
     className={cx(
-      styles['payment-card']
+      styles['payment-card'],
+      className
     )}
     {...rest}
   >
