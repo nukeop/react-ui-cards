@@ -6,7 +6,7 @@ export type NewsHeaderProps = {
   title: string;
   author: string;
   date: string;
-  tags: (string | (() => React.ReactNode))[];
+  tags?: (string | (() => React.ReactNode))[];
 };
 
 const NewsHeader: React.FC<NewsHeaderProps> = ({

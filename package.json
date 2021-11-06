@@ -2,7 +2,11 @@
   "name": "react-ui-cards",
   "version": "2.0.0",
   "description": "Various card components for React",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -31,23 +35,23 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
     "chart.js": "^2.7.2",
     "classnames": "^2.2.6",
     "css-loader": "^5.2.7",
     "node-sass": "^6.0.1",
     "raw-loader": "^4.0.2",
-    "react": "^17.0.2",
     "react-chartjs-2": "^2.7.2",
-    "react-dom": "^17.0.2",
     "react-fontawesome": "^1.6.1",
-    "react-scripts": "4.0.3",
     "sass-loader": "^10.2.0",
     "style-loader": "^2.0.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1",
-    "webpack": "^4.46.0"
+    "webpack": "^4.46.0",
+    "react-scripts": "4.0.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "eslintConfig": {
     "extends": [
@@ -78,11 +82,18 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
     "@storybook/addon-actions": "^6.4.0-beta.23",
     "@storybook/addon-essentials": "^6.4.0-beta.23",
     "@storybook/addon-links": "^6.4.0-beta.23",
     "@storybook/node-logger": "^6.4.0-beta.23",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.4.0-beta.23"
+    "@storybook/react": "^6.4.0-beta.23",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-fontawesome": "^1.6.5",
+    "cross-env": "^7.0.3"
   }
 }

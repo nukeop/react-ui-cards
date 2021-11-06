@@ -14,7 +14,7 @@ export type ProductCardProps = {
   price: PriceTagProps['price'];
   productName: ProductCardDescriptionProps['productName'];
   description: ProductCardDescriptionProps['description'];
-  buttonText: ProductCardDescriptionProps['buttonText'];
+  buttonText?: ProductCardDescriptionProps['buttonText'];
   url: ProductCardDescriptionProps['url'];
 }
 

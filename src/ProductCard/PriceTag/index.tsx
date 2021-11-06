@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 
 export type PriceTagProps = {
-  price: number;
+  price: string;
 }
 
 const PriceTag: React.FC<PriceTagProps> = ({ price }) => (

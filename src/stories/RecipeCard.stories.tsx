@@ -1,3 +1,4 @@
+import React from "react";
 import RecipeCard from "../RecipeCard";
 
 export default {
@@ -8,7 +9,11 @@ export default {
       }
 }
 
-export const Example1 = ({ onLike }) => <RecipeCard
+type StoryProps = {
+    onLike: React.MouseEventHandler;
+}
+
+export const Example1 = ({ onLike }: StoryProps) => <RecipeCard
     href='https://github.com/nekonee'
     thumbnail='https://i.imgur.com/VkHTicg.jpg'
     title='Fluffy pancakes'
@@ -17,7 +22,7 @@ export const Example1 = ({ onLike }) => <RecipeCard
     likeCallback={onLike}
 />;
 
-export const Example2 = ({ onLike }) => <RecipeCard
+export const Example2 = ({ onLike }: StoryProps) => <RecipeCard
     href='https://github.com/nekonee'
     thumbnail='https://i.imgur.com/0308iuN.jpg'
     title='Cupcakes'
@@ -26,7 +31,7 @@ export const Example2 = ({ onLike }) => <RecipeCard
     likeCallback={onLike}
 />;
 
-export const Example3 = ({ onLike }) => <RecipeCard
+export const Example3 = ({ onLike }: StoryProps) => <RecipeCard
     href='https://github.com/nekonee'
     thumbnail='https://i.imgur.com/s9oR6BE.jpg'
     title='Macarons'

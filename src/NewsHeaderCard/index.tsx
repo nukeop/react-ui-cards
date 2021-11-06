@@ -37,13 +37,15 @@ const NewsHeaderCard: React.FC<NewsHeaderCardProps> = ({
     >
 
       <NewsHeaderBackground
-        thumbnail={thumbnail} />
+        thumbnail={thumbnail}
+      />
 
       <NewsHeader
         title={title}
         author={author}
         date={date}
-        tags={tags} />
+        tags={tags}
+      />
     </Card>
   </a>
 )
