@@ -1,13 +1,11 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import worldMap from '../svg/world-map.svg';
 import triangles from '../svg/triangles.svg';
 import spiral from '../svg/spiral.svg';
 import styles from './styles.module.scss';
 
 const patterns = {
-  worldMap,
   triangles,
   spiral
 };
@@ -24,8 +22,8 @@ const PaymentCardBackground: React.FC<PaymentCardBackgroundProps> = ({
   backgroundPattern
 }) => {
   let pattern = backgroundPattern === undefined
-    ? 'worldMap' : backgroundPattern;
-    
+    ? 'spiral' : backgroundPattern;
+
   return (
     <div className={styles['payment-card-background']}
       style={{ background: background || defaultBackground }}>
