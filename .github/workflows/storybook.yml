@@ -1,11 +1,11 @@
+name: Publish stories
+
 on:
   push:
     branches:
      - master
     paths: ["stories/**", "src/components/**"]
   workflow_dispatch:
-
-name: Publish stories
 
 jobs:
   build-and-deploy:

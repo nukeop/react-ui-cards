@@ -1,8 +1,8 @@
+name: Build and publish
+
 on:
   release:
     types: [published]
-
-name: Build and publish
 
 jobs:
   build-and-publish:
