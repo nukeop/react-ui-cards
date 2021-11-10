@@ -3,8 +3,7 @@ on:
     branches:
      - master
     paths: ["stories/**", "src/components/**"]
-  workflow_run:
-    workflows: ["Build and deploy Storybook"]
+  workflow_dispatch:
 
 name: Publish stories
 
