@@ -628,113 +628,6 @@ exports[`Storyshots Cards/Payment card Example 2 1`] = `
         className="payment-card-background"
         style={
           Object {
-            "background": "linear-gradient(135deg, #00b4db, #0083b0)",
-          }
-        }
-      >
-        <div
-          className="svg-background worldMap"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "world-map.svg",
-            }
-          }
-        />
-      </div>
-      <div
-        className="issuer-icon"
-      >
-        <img
-          src="https://i.imgur.com/31vser1g.png"
-        />
-      </div>
-      <div
-        className="chip-container"
-      >
-        <span
-          className="chip"
-        />
-      </div>
-      <div
-        className="payment-card-number"
-      >
-        5458 8074 7691 1254
-      </div>
-      <div
-        className="payment-card-date"
-      >
-        <div
-          className="valid-date"
-        >
-          Valid dates
-        </div>
-        <div
-          className="to-date"
-        >
-          05/20
-        </div>
-      </div>
-      <div
-        className="payment-card-name"
-      >
-        Joseph Joestar
-      </div>
-    </div>
-    <div
-      className="back"
-    >
-      <div
-        className="payment-card-background"
-        style={
-          Object {
-            "background": "linear-gradient(135deg, #00b4db, #0083b0)",
-          }
-        }
-      >
-        <div
-          className="svg-background"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "",
-            }
-          }
-        />
-      </div>
-      <div
-        className="payment-card-back"
-      >
-        <span
-          className="magnetic-stripe"
-        />
-        <div
-          className="signature-field"
-        >
-          <span
-            className="cvv"
-          >
-            714
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Cards/Payment card Example 3 1`] = `
-<div
-  className="card card flipping-card-container payment-card"
->
-  <div
-    className="flipping-card"
-  >
-    <div
-      className="front"
-    >
-      <div
-        className="payment-card-background"
-        style={
-          Object {
             "background": "linear-gradient( 135deg, #11998e, #38ef7d)",
           }
         }
@@ -831,7 +724,6 @@ exports[`Storyshots Cards/Payment card Example 3 1`] = `
 exports[`Storyshots Cards/Product card Example 1 1`] = `
 <div
   className="card card product-card"
-  rating={3}
 >
   <div
     className="product-card-gallery"
@@ -908,7 +800,6 @@ exports[`Storyshots Cards/Product card Example 1 1`] = `
 exports[`Storyshots Cards/Product card Example 2 1`] = `
 <div
   className="card card product-card"
-  rating={5}
 >
   <div
     className="product-card-gallery"
