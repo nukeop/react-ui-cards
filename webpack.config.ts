@@ -10,7 +10,9 @@ const config: webpack.Configuration = {
   entry: path.resolve(SRC_DIR, "index.tsx"),
   output: {
     path: DIST_DIR,
-    filename: "bundle.js",
+    filename: "index.js",
+    library: "reactUiCards",
+    libraryTarget: "umd"
   },
   devtool: "source-map",
   resolve: {
