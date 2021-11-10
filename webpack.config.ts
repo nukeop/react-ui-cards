@@ -23,6 +23,11 @@ const config: webpack.Configuration = {
       {
         test: /\.tsx?/,
         loader: "ts-loader",
+        options: {
+          compilerOptions: {
+            noEmit: false
+          }
+        },
         exclude: /node_modules/,
       },
       {
