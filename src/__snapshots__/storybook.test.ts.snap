@@ -1,0 +1,1460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Cards/Base card Custom Class 1`] = `
+Array [
+  <style>
+    
+        .custom-card {
+            background-color: #faebd7;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+    
+  </style>,
+  <div
+    className="card card custom-card"
+  >
+    Card with custom className
+  </div>,
+]
+`;
+
+exports[`Storyshots Cards/Base card Example 1 1`] = `
+<div
+  className="card card"
+>
+  Card content
+</div>
+`;
+
+exports[`Storyshots Cards/Base card Floating Card 1`] = `
+<div
+  className="card card float"
+>
+  Hover over me
+</div>
+`;
+
+exports[`Storyshots Cards/Crypto card Example 1 1`] = `
+<div
+  className="card card crypto-card"
+>
+  <div
+    className="crypto-card-title-line"
+  >
+    <div
+      className="currency-name"
+    >
+      Bitcoin
+    </div>
+    <div
+      className="currency-price"
+    >
+      $8850.32
+    </div>
+  </div>
+  <div
+    className="crypto-card-icon-line"
+  >
+    <div
+      className="left"
+    >
+      <div
+        className="crypto-icon"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/2000px-Bitcoin.svg.png"
+        />
+      </div>
+      <div
+        className="crypto-short-name"
+      >
+        BTC
+      </div>
+    </div>
+    <div
+      className="right"
+    >
+      <div
+        className="trend green"
+      >
+        (8.54%) $563.47
+         
+        ▲
+      </div>
+    </div>
+  </div>
+  <div
+    className="crypto-chart"
+  />
+</div>
+`;
+
+exports[`Storyshots Cards/Crypto card Example 2 1`] = `
+<div
+  className="card card crypto-card"
+>
+  <div
+    className="crypto-card-title-line"
+  >
+    <div
+      className="currency-name"
+    >
+      Ethereum
+    </div>
+    <div
+      className="currency-price"
+    >
+      $766.12
+    </div>
+  </div>
+  <div
+    className="crypto-card-icon-line"
+  >
+    <div
+      className="left"
+    >
+      <div
+        className="crypto-icon"
+      >
+        <img
+          src="https://maxcdn.icons8.com/Share/icon/color/Logos/ethereum1600.png"
+        />
+      </div>
+      <div
+        className="crypto-short-name"
+      >
+        ETH
+      </div>
+    </div>
+    <div
+      className="right"
+    >
+      <div
+        className="trend green"
+      >
+        (7.32%) $14.94
+         
+        ▲
+      </div>
+    </div>
+  </div>
+  <div
+    className="crypto-chart"
+  />
+</div>
+`;
+
+exports[`Storyshots Cards/Crypto card Example 3 1`] = `
+<div
+  className="card card crypto-card"
+>
+  <div
+    className="crypto-card-title-line"
+  >
+    <div
+      className="currency-name"
+    >
+      Litecoin
+    </div>
+    <div
+      className="currency-price"
+    >
+      $137.92
+    </div>
+  </div>
+  <div
+    className="crypto-card-icon-line"
+  >
+    <div
+      className="left"
+    >
+      <div
+        className="crypto-icon"
+      >
+        <img
+          src="http://icons.iconarchive.com/icons/blackvariant/button-ui-requests-6/1024/LiteCoin-icon.png"
+        />
+      </div>
+      <div
+        className="crypto-short-name"
+      >
+        LTC
+      </div>
+    </div>
+    <div
+      className="right"
+    >
+      <div
+        className="trend red"
+      >
+        (-5.12%) $6.34
+         
+        ▼
+      </div>
+    </div>
+  </div>
+  <div
+    className="crypto-chart"
+  />
+</div>
+`;
+
+exports[`Storyshots Cards/Flipping card Example 1 1`] = `
+<div
+  className="card card flipping-card-container"
+>
+  <div
+    className="flipping-card"
+  >
+    <div
+      className="back"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/wjbYGNv.jpg)",
+            "backgroundPosition": "center",
+            "backgroundSize": "contain",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="front"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/3sKjY8V.jpg)",
+            "backgroundPosition": "center",
+            "backgroundSize": "contain",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Flipping card Example 2 1`] = `
+<div
+  className="card card flipping-card-container"
+>
+  <div
+    className="flipping-card"
+  >
+    <div
+      className="back"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/m0GnZH3.jpg)",
+            "backgroundPosition": "center",
+            "backgroundSize": "contain",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="front"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/E1jz6WQ.jpg)",
+            "backgroundPosition": "center",
+            "backgroundSize": "contain",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Flipping card Example 3 1`] = `
+<div
+  className="card card flipping-card-container"
+>
+  <div
+    className="flipping-card"
+  >
+    <div
+      className="back"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/1abAoUz.jpg)",
+            "backgroundPosition": "center",
+            "backgroundSize": "contain",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+    <div
+      className="front"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/UjbK2Wb.png)",
+            "backgroundPosition": "center",
+            "backgroundSize": "contain",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/News header card Example 1 1`] = `
+<a
+  href="https://github.com/nekonee"
+>
+  <div
+    className="card card news-header-card"
+  >
+    <div
+      className="news-header-background"
+    >
+      <div
+        className="overlay"
+      />
+      <div
+        className="thumbnail"
+      >
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/rLFk5nd.jpg)",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="news-header"
+    >
+      <div
+        className="title"
+      >
+        Polish mountaineers on the top
+      </div>
+      <div
+        className="bottom"
+      >
+        <div
+          className="author"
+        >
+          Daily Sport
+        </div>
+        <div
+          className="date"
+        >
+          Feb 2, 2018
+        </div>
+      </div>
+      <div
+        className="tags"
+      >
+        <span
+          className="tag"
+        >
+          nature
+        </span>
+        <span
+          className="tag"
+        >
+          photo
+        </span>
+        <span
+          className="tag"
+        >
+          <i>
+            component
+          </i>
+        </span>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/News header card Example 2 1`] = `
+<a
+  href="https://github.com/nekonee"
+>
+  <div
+    className="card card news-header-card"
+  >
+    <div
+      className="news-header-background"
+    >
+      <div
+        className="overlay"
+      />
+      <div
+        className="thumbnail"
+      >
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/1fk52PJ.jpg)",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="news-header"
+    >
+      <div
+        className="title"
+      >
+        Most poisonous dishes you must avoid
+      </div>
+      <div
+        className="bottom"
+      >
+        <div
+          className="author"
+        >
+          Daily Health
+        </div>
+        <div
+          className="date"
+        >
+          Jan 2, 2018
+        </div>
+      </div>
+      <div
+        className="tags"
+      />
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/News header card Example 3 1`] = `
+<a
+  href="https://github.com/nekonee"
+>
+  <div
+    className="card card news-header-card"
+  >
+    <div
+      className="news-header-background"
+    >
+      <div
+        className="overlay"
+      />
+      <div
+        className="thumbnail"
+      >
+        <div
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/n5Wg2Po.jpg)",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="news-header"
+    >
+      <div
+        className="title"
+      >
+        Cool looking test tubes
+      </div>
+      <div
+        className="bottom"
+      >
+        <div
+          className="author"
+        >
+          Daily Science
+        </div>
+        <div
+          className="date"
+        >
+          Mar 2, 2018
+        </div>
+      </div>
+      <div
+        className="tags"
+      />
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/Payment card Example 1 1`] = `
+<div
+  className="card card flipping-card-container payment-card"
+>
+  <div
+    className="flipping-card"
+  >
+    <div
+      className="front"
+    >
+      <div
+        className="payment-card-background"
+        style={
+          Object {
+            "background": "linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%)",
+          }
+        }
+      >
+        <div
+          className="svg-background spiral"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "spiral.svg",
+            }
+          }
+        />
+      </div>
+      <div
+        className="issuer-icon"
+      >
+        <img
+          src="https://i.imgur.com/MulWZzk.png"
+        />
+      </div>
+      <div
+        className="chip-container"
+      >
+        <span
+          className="chip"
+        />
+      </div>
+      <div
+        className="payment-card-number"
+      >
+        4445 8509 0753 1365
+      </div>
+      <div
+        className="payment-card-date"
+      >
+        <div
+          className="valid-date"
+        >
+          Valid dates
+        </div>
+        <div
+          className="to-date"
+        >
+          12/18
+        </div>
+      </div>
+      <div
+        className="payment-card-name"
+      >
+        Jean Pierre Polnareff
+      </div>
+    </div>
+    <div
+      className="back"
+    >
+      <div
+        className="payment-card-background"
+        style={
+          Object {
+            "background": "linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%)",
+          }
+        }
+      >
+        <div
+          className="svg-background"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "",
+            }
+          }
+        />
+      </div>
+      <div
+        className="payment-card-back"
+      >
+        <span
+          className="magnetic-stripe"
+        />
+        <div
+          className="signature-field"
+        >
+          <span
+            className="cvv"
+          >
+            213
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Payment card Example 2 1`] = `
+<div
+  className="card card flipping-card-container payment-card"
+>
+  <div
+    className="flipping-card"
+  >
+    <div
+      className="front"
+    >
+      <div
+        className="payment-card-background"
+        style={
+          Object {
+            "background": "linear-gradient( 135deg, #11998e, #38ef7d)",
+          }
+        }
+      >
+        <div
+          className="svg-background triangles"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "triangles.svg",
+            }
+          }
+        />
+      </div>
+      <div
+        className="issuer-icon"
+      >
+        <img
+          src="https://i.imgur.com/CRdoJbX.png"
+        />
+      </div>
+      <div
+        className="chip-container"
+      >
+        <span
+          className="chip"
+        />
+      </div>
+      <div
+        className="payment-card-number"
+      >
+        3421 7270 0864 956
+      </div>
+      <div
+        className="payment-card-date"
+      >
+        <div
+          className="valid-date"
+        >
+          Valid dates
+        </div>
+        <div
+          className="to-date"
+        >
+          02/22
+        </div>
+      </div>
+      <div
+        className="payment-card-name"
+      >
+        Jotaro Kujo
+      </div>
+    </div>
+    <div
+      className="back"
+    >
+      <div
+        className="payment-card-background"
+        style={
+          Object {
+            "background": "linear-gradient( 135deg, #11998e, #38ef7d)",
+          }
+        }
+      >
+        <div
+          className="svg-background"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "",
+            }
+          }
+        />
+      </div>
+      <div
+        className="payment-card-back"
+      >
+        <span
+          className="magnetic-stripe"
+        />
+        <div
+          className="signature-field"
+        >
+          <span
+            className="cvv"
+          >
+            880
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Product card Example 1 1`] = `
+<div
+  className="card card product-card"
+>
+  <div
+    className="product-card-gallery"
+  >
+    <div
+      className="gallery-item active"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/jRVDeI8.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/raPe27t.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/IpEsYSH.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-toggle right"
+      onClick={[Function]}
+    >
+      &gt;
+    </div>
+    <div
+      className="gallery-toggle left"
+      onClick={[Function]}
+    >
+      &lt;
+    </div>
+  </div>
+  <div
+    className="price-tag"
+  >
+    $99
+  </div>
+  <div
+    className="product-card-description-box"
+  >
+    <div
+      className="product-card-name"
+    >
+      Headphones
+    </div>
+    <p
+      className="product-card-description"
+    >
+      Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.
+    </p>
+    <div
+      className="row"
+    >
+      <a
+        className="buy-button"
+        href="https://github.com/nukeop"
+      >
+        Add to cart
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Product card Example 2 1`] = `
+<div
+  className="card card product-card"
+>
+  <div
+    className="product-card-gallery"
+  >
+    <div
+      className="gallery-item active"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/t7DTziH.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/kA5lx6t.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-item"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/cUsl6Gs.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery-toggle right"
+      onClick={[Function]}
+    >
+      &gt;
+    </div>
+    <div
+      className="gallery-toggle left"
+      onClick={[Function]}
+    >
+      &lt;
+    </div>
+  </div>
+  <div
+    className="price-tag"
+  >
+    $1.50
+  </div>
+  <div
+    className="product-card-description-box"
+  >
+    <div
+      className="product-card-name"
+    >
+      Cupcake
+    </div>
+    <p
+      className="product-card-description"
+    >
+      Nullam velit leo, pulvinar non metus feugiat, pharetra ornare enim. Vivamus ac quam a purus venenatis fringilla.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Recipe card Example 1 1`] = `
+<div
+  className="card card recipe-card"
+>
+  <a
+    className="recipe-card-content"
+    href="https://github.com/nekonee"
+  >
+    <div
+      className="thumbnail"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/VkHTicg.jpg)",
+          }
+        }
+      />
+    </div>
+  </a>
+  <div
+    className="recipe-card-desc"
+  >
+    <div
+      className="title"
+    >
+      Fluffy pancakes
+    </div>
+    <a
+      className="heart"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-heart-o"
+      />
+    </a>
+    <div
+      className="time"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-hourglass-half"
+      />
+      0:30
+    </div>
+    <div
+      className="servings"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-user-o"
+      />
+      3-5
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Recipe card Example 2 1`] = `
+<div
+  className="card card recipe-card"
+>
+  <a
+    className="recipe-card-content"
+    href="https://github.com/nekonee"
+  >
+    <div
+      className="thumbnail"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/0308iuN.jpg)",
+          }
+        }
+      />
+    </div>
+  </a>
+  <div
+    className="recipe-card-desc"
+  >
+    <div
+      className="title"
+    >
+      Cupcakes
+    </div>
+    <a
+      className="heart"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-heart-o"
+      />
+    </a>
+    <div
+      className="time"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-hourglass-half"
+      />
+      1:30
+    </div>
+    <div
+      className="servings"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-user-o"
+      />
+      4-6
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Recipe card Example 3 1`] = `
+<div
+  className="card card recipe-card"
+>
+  <a
+    className="recipe-card-content"
+    href="https://github.com/nekonee"
+  >
+    <div
+      className="thumbnail"
+    >
+      <div
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/s9oR6BE.jpg)",
+          }
+        }
+      />
+    </div>
+  </a>
+  <div
+    className="recipe-card-desc"
+  >
+    <div
+      className="title"
+    >
+      Macarons
+    </div>
+    <a
+      className="heart"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-heart-o"
+      />
+    </a>
+    <div
+      className="time"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-hourglass-half"
+      />
+      2:00
+    </div>
+    <div
+      className="servings"
+    >
+      <span
+        aria-hidden={true}
+        className="fa fa-user-o"
+      />
+      7-10
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Cards/Tagged content card Example 1 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card tagged-content-card"
+  >
+    <div
+      className="card-overlay"
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/yCch7GN.jpg)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="card-content"
+    >
+      <div
+        className="thumbnail"
+      >
+        <img
+          src="https://i.imgur.com/yCch7GN.jpg"
+        />
+      </div>
+      <div
+        className="text"
+      >
+        <div
+          className="title"
+        >
+          Cheesecake
+        </div>
+        <div
+          className="description"
+        >
+          a cake with raspberries
+        </div>
+        <div
+          className="tags"
+        >
+          <span
+            className="tag"
+          >
+            food
+          </span>
+          <span
+            className="tag"
+          >
+            cake
+          </span>
+          <span
+            className="tag"
+          >
+            fruits
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/Tagged content card Example 2 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card tagged-content-card"
+  >
+    <div
+      className="card-overlay"
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/57I3RAq.jpg)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="card-content"
+    >
+      <div
+        className="thumbnail"
+      >
+        <img
+          src="https://i.imgur.com/57I3RAq.jpg"
+        />
+      </div>
+      <div
+        className="text"
+      >
+        <div
+          className="title"
+        >
+          Cupcakes
+        </div>
+        <div
+          className="description"
+        >
+          a bite-sized cake
+        </div>
+        <div
+          className="tags"
+        >
+          <span
+            className="tag"
+          >
+            food
+          </span>
+          <span
+            className="tag"
+          >
+            cake
+          </span>
+          <span
+            className="tag"
+          >
+            icing
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/Tagged content card Example 3 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card tagged-content-card"
+  >
+    <div
+      className="card-overlay"
+    >
+      <div
+        className="overlay"
+        style={
+          Object {
+            "backgroundImage": "url(https://i.imgur.com/H0f0R6p.jpg)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="card-content"
+    >
+      <div
+        className="thumbnail"
+      >
+        <img
+          src="https://i.imgur.com/H0f0R6p.jpg"
+        />
+      </div>
+      <div
+        className="text"
+      >
+        <div
+          className="title"
+        >
+          Burger
+        </div>
+        <div
+          className="description"
+        >
+          the cornerstone of every nutritious breakfast
+        </div>
+        <div
+          className="tags"
+        >
+          <span
+            className="tag"
+          >
+            food
+          </span>
+          <span
+            className="tag"
+          >
+            sandwich
+          </span>
+          <span
+            className="tag"
+          >
+            meat
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/User card Example 1 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card float"
+  >
+    <div
+      className="user-card-header"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/w5tX1Pn.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/uDYejhJ.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-body"
+    >
+      <div
+        className="user-card-name"
+      >
+        Justin Case
+      </div>
+      <div
+        className="user-card-position-name"
+      >
+        Software Developer
+      </div>
+    </div>
+    <div
+      className="user-card-stats"
+    >
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          21
+        </div>
+        <div
+          className="stat-name"
+        >
+          followers
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          37
+        </div>
+        <div
+          className="stat-name"
+        >
+          following
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          117
+        </div>
+        <div
+          className="stat-name"
+        >
+          posts
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/User card Example 2 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card float"
+  >
+    <div
+      className="user-card-header"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/vRAtM3i.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/XJxqvsU.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-body"
+    >
+      <div
+        className="user-card-name"
+      >
+        Frank Hepsfield
+      </div>
+      <div
+        className="user-card-position-name"
+      >
+        Software Engineering Manager
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Storyshots Cards/User card Example 3 1`] = `
+<a
+  className="card-link"
+  href="https://github.com/nukeop"
+>
+  <div
+    className="card card float"
+  >
+    <div
+      className="user-card-header"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/p5yXGQk.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-avatar"
+      style={
+        Object {
+          "backgroundImage": "url(https://i.imgur.com/kFkyYkZ.jpg)",
+        }
+      }
+    />
+    <div
+      className="user-card-body"
+    >
+      <div
+        className="user-card-name"
+      >
+        Joseph Cheps
+      </div>
+      <div
+        className="user-card-position-name"
+      >
+        Firmware Engineer
+      </div>
+    </div>
+    <div
+      className="user-card-stats"
+    >
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          365
+        </div>
+        <div
+          className="stat-name"
+        >
+          commits
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          110
+        </div>
+        <div
+          className="stat-name"
+        >
+          stars
+        </div>
+      </div>
+      <div
+        className="stat-container"
+      >
+        <div
+          className="stat-value"
+        >
+          54
+        </div>
+        <div
+          className="stat-name"
+        >
+          repositories
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
