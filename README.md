@@ -4,23 +4,44 @@ Various stylish card components for React.
 Focused on being ready to use with little modifications. Supply your data and you're good to go.
 
 ## Live demo
-https://nukeop.github.io/react-ui-cards/
+https://nukeop.github.io/react-ui-cards
 
 ## npm
 https://www.npmjs.com/package/react-ui-cards
 
-## Installation
+## Installation and usage example
+Minified and gzipped bundle size: 52kb.
 ```bash
 $ npm install --save react-ui-cards
 ```
 
+```typescript
+import { UserCard } from 'react-ui-cards';
+
+export const Example = () => <UserCard
+    float
+    href='https://github.com/nukeop'
+    header='https://i.imgur.com/vRAtM3i.jpg'
+    avatar='https://i.imgur.com/XJxqvsU.jpg'
+    name='Frank Hepsfield'
+    positionName='Software Engineering Manager'
+/>
+```
+
 ## Development
 ### Getting started
-After cloning the repo, run the following commands to start the project in development mode with hot reload:
+After cloning the repo, run the following commands to start Storybook in development mode with hot reload:
 
 ```shell
 $ npm install
-$ npm run dev
+$ npm run storybook
+```
+
+### Running tests
+The repo is configured so that it generates snapshot tests from Storybook stories. To run them, use:
+
+```shell
+$ npm test
 ```
 
 ### Contributing
