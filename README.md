@@ -1,6 +1,4 @@
-# react-ui-cards
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/nukeop/react-ui-cards.svg)](https://greenkeeper.io/)
+# react-ui-cards ![CI](https://github.com/nukeop/react-ui-cards/actions/workflows/ci.yml/badge.svg)
 
 Various stylish card components for React.
 Focused on being ready to use with little modifications. Supply your data and you're good to go.
