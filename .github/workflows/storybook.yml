@@ -21,7 +21,7 @@ jobs:
     - name: npm ci
       run: npm ci
 
-    - name: Build Storybookg
+    - name: Build Storybook
       run:  npm run build-storybook
 
     - name: Build and deploy to gh-pages branch
