@@ -1458,3 +1458,240 @@ exports[`Storyshots Cards/User card Example 3 1`] = `
   </div>
 </a>
 `;
+
+exports[`Storyshots Demo Demo 1`] = `
+<div
+  className="demo"
+>
+  <div
+    className="links"
+  >
+    <a
+      href="https://www.npmjs.com/package/react-ui-cards"
+    >
+      NPM package
+    </a>
+    <a
+      href="https://github.com/nukeop/react-ui-cards"
+    >
+      See the source at Github
+    </a>
+  </div>
+  <p>
+    Use the links on the left to see the other components.
+  </p>
+  <div
+    className="cards"
+  >
+    <a
+      className="card-link"
+      href="https://github.com/nukeop"
+    >
+      <div
+        className="card card float"
+      >
+        <div
+          className="user-card-header"
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/w5tX1Pn.jpg)",
+            }
+          }
+        />
+        <div
+          className="user-card-avatar"
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/uDYejhJ.jpg)",
+            }
+          }
+        />
+        <div
+          className="user-card-body"
+        >
+          <div
+            className="user-card-name"
+          >
+            Justin Case
+          </div>
+          <div
+            className="user-card-position-name"
+          >
+            Software Developer
+          </div>
+        </div>
+        <div
+          className="user-card-stats"
+        >
+          <div
+            className="stat-container"
+          >
+            <div
+              className="stat-value"
+            >
+              21
+            </div>
+            <div
+              className="stat-name"
+            >
+              followers
+            </div>
+          </div>
+          <div
+            className="stat-container"
+          >
+            <div
+              className="stat-value"
+            >
+              37
+            </div>
+            <div
+              className="stat-name"
+            >
+              following
+            </div>
+          </div>
+          <div
+            className="stat-container"
+          >
+            <div
+              className="stat-value"
+            >
+              117
+            </div>
+            <div
+              className="stat-name"
+            >
+              posts
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="card-link"
+      href="https://github.com/nukeop"
+    >
+      <div
+        className="card card float"
+      >
+        <div
+          className="user-card-header"
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/vRAtM3i.jpg)",
+            }
+          }
+        />
+        <div
+          className="user-card-avatar"
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/XJxqvsU.jpg)",
+            }
+          }
+        />
+        <div
+          className="user-card-body"
+        >
+          <div
+            className="user-card-name"
+          >
+            Frank Hepsfield
+          </div>
+          <div
+            className="user-card-position-name"
+          >
+            Software Engineering Manager
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      className="card-link"
+      href="https://github.com/nukeop"
+    >
+      <div
+        className="card card float"
+      >
+        <div
+          className="user-card-header"
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/p5yXGQk.jpg)",
+            }
+          }
+        />
+        <div
+          className="user-card-avatar"
+          style={
+            Object {
+              "backgroundImage": "url(https://i.imgur.com/kFkyYkZ.jpg)",
+            }
+          }
+        />
+        <div
+          className="user-card-body"
+        >
+          <div
+            className="user-card-name"
+          >
+            Joseph Cheps
+          </div>
+          <div
+            className="user-card-position-name"
+          >
+            Firmware Engineer
+          </div>
+        </div>
+        <div
+          className="user-card-stats"
+        >
+          <div
+            className="stat-container"
+          >
+            <div
+              className="stat-value"
+            >
+              365
+            </div>
+            <div
+              className="stat-name"
+            >
+              commits
+            </div>
+          </div>
+          <div
+            className="stat-container"
+          >
+            <div
+              className="stat-value"
+            >
+              110
+            </div>
+            <div
+              className="stat-name"
+            >
+              stars
+            </div>
+          </div>
+          <div
+            className="stat-container"
+          >
+            <div
+              className="stat-value"
+            >
+              54
+            </div>
+            <div
+              className="stat-name"
+            >
+              repositories
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;

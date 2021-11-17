@@ -1,0 +1,31 @@
+.demo {
+    display: flex;
+    flex-flow: column;
+
+    .links {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+
+        a {
+            padding: 1em 2em;
+            border-radius: 1em;
+            color: #ecf0f1;
+            background: rgba(#9b59b6, 0.8);
+            margin: 1rem;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
