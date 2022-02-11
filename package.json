@@ -37,7 +37,7 @@
     "chart.js": "^2.7.2",
     "classnames": "^2.2.6",
     "css-loader": "^5.2.7",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "raw-loader": "^4.0.2",
     "react": "^17.0.2",
     "react-chartjs-2": "^2.7.2",
