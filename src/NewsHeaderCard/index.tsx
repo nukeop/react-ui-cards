@@ -10,6 +10,7 @@ import styles from './styles.module.scss';
 export type NewsHeaderCardProps = {
   className?: string;
   href: string;
+  hrefTarget: string;
   title: NewsHeaderProps['title'];
   author: NewsHeaderProps['author'];
   date: NewsHeaderProps['date'];
@@ -20,6 +21,7 @@ export type NewsHeaderCardProps = {
 const NewsHeaderCard: React.FC<NewsHeaderCardProps> = ({
   className,
   href,
+  hrefTarget,
   title,
   author,
   date,
@@ -27,7 +29,7 @@ const NewsHeaderCard: React.FC<NewsHeaderCardProps> = ({
   thumbnail,
   ...rest
 }) => (
-  <a href={href}>
+  <a href={href}  target={hrefTarget ? hrefTarget : ""}>
     <Card
       className={cx(
         styles['news-header-card'],
