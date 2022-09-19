@@ -16,6 +16,7 @@ export const Example1 = () => <NewsHeaderCard
 
 export const Example2 = () => <NewsHeaderCard
     href='https://github.com/nekonee'
+    target='_blank'
     thumbnail='https://i.imgur.com/1fk52PJ.jpg'
     title='Most poisonous dishes you must avoid'
     author='Daily Health'
@@ -24,6 +25,7 @@ export const Example2 = () => <NewsHeaderCard
 
 export const Example3 = () => <NewsHeaderCard
     href='https://github.com/nekonee'
+    target='_parent'
     thumbnail='https://i.imgur.com/n5Wg2Po.jpg'
     title='Cool looking test tubes'
     author='Daily Science'
