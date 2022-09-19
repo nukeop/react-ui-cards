@@ -21,7 +21,7 @@ export type NewsHeaderCardProps = {
 const NewsHeaderCard: React.FC<NewsHeaderCardProps> = ({
   className,
   href,
-  hrefTarget = "",
+  hrefTarget = "_self",
   title,
   author,
   date,
