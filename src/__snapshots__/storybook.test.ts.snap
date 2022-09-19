@@ -327,6 +327,7 @@ exports[`Storyshots Cards/Flipping card Example 3 1`] = `
 exports[`Storyshots Cards/News header card Example 1 1`] = `
 <a
   href="https://github.com/nekonee"
+  target="_self"
 >
   <div
     className="card card news-header-card"
@@ -400,6 +401,7 @@ exports[`Storyshots Cards/News header card Example 1 1`] = `
 exports[`Storyshots Cards/News header card Example 2 1`] = `
 <a
   href="https://github.com/nekonee"
+  target="_self"
 >
   <div
     className="card card news-header-card"
@@ -455,6 +457,7 @@ exports[`Storyshots Cards/News header card Example 2 1`] = `
 exports[`Storyshots Cards/News header card Example 3 1`] = `
 <a
   href="https://github.com/nekonee"
+  target="_self"
 >
   <div
     className="card card news-header-card"
