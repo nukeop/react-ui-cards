@@ -46,3 +46,22 @@
     background-color: #16a085;
   }
 }
+
+.buy-button-disabled {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #899a9e;
+  background-color: #97aca7;
+  border-radius: 0.25rem;
+  transition: 0.25s;
+  cursor: default;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #97aca7;
+  }
+}
