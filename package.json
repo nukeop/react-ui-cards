@@ -12,7 +12,7 @@
     "build": "webpack --progress",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "NODE_OPTIONS=--openssl-legacy-provider && storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "repository": {
